@@ -1,0 +1,71 @@
+{%- comment -%}
+* Generate a string of image sources for use in srcset img tag attribute
+
+  *  section_width {string} - Section width setting: wrapper--none, wrapper--full, wrapper, wrapper--narrow, wrapper--tiny
+  *  columns_desktop {number} - Number of columns on desktop
+  *  columns_tablet {number} - Number of columns on tablet
+  *  columns_mobile {number} - Number of columns on mobile
+
+{%- capture sizes -%}
+  {% render 'image-grid-srcset', columns: columns, section_width: section_width  %}
+{%- endcapture -%}
+{%- endcomment -%}
+
+{% capture widths %}
+  {% render "image-grid-widths",
+    columns_desktop: columns_desktop,
+    columns_tablet: columns_tablet,
+    columns_mobile: columns_mobile,
+    section_width: section_width
+  %}
+{% endcapture %}
+
+{%- liquid
+  assign max_width = 5760
+  assign widths = widths | split: ','
+  assign wh_ratio = wh_ratio | default: image.aspect_ratio
+  assign image_width = image.width | at_most: max_width
+  assign image_height = image_width | divided_by: wh_ratio
+  assign srcset = image | image_url: width: image_width, height: image_height, crop: crop
+  assign srcset = srcset | append: ' ' | append: image_width | append: 'w'
+-%}
+
+{% if image_width > 0 %}
+  {%- for string_width in widths -%}
+    {%- assign width = string_width | strip | times: 1 | at_most: image_width -%}
+    {% comment %}
+      You can adjust the width_2x value down towards 1 until photos become noticibly blurry
+      detailed photos with natural grain hide compression better than simple gradients
+    {% endcomment %}
+    {%- assign width_2x = width | times: 2 -%}
+
+    {% if width > 0 %}
+      {%- capture src -%}
+        {% assign height = width | divided_by: wh_ratio %}
+        {{ image | image_url: width: width, height: height, crop: crop }} {{width}}w
+      {%- endcapture -%}
+      {%- assign srcset = srcset | append: "," | append: src -%}
+
+      {% if width_2x <= image_width %}
+        {%- capture src_2x -%}
+          {% assign height_2x = width_2x | divided_by: wh_ratio %}
+          {{ image | image_url: width: width_2x, height: height_2x, crop: crop }} {{width_2x}}w
+        {%- endcapture -%}
+
+        {%- assign srcset = srcset | append: "," | append: src_2x -%}
+      {%- endif -%}
+
+      {% comment %} Uncomment to support 3x resolutions {% endcomment %}
+      {% comment %}
+        {%- assign width_3x = width | times: 3 -%}
+          {%- capture src_3x -%}
+            {{ image | image_url: width: width_3x }} {{width_3x}}w
+          {%- endcapture -%}
+
+          {%- assign srcset = srcset | append: "," | append: src_3x -%}
+        {% endif %}
+      {% endcomment %}
+    {% endif %}
+  {%- endfor -%}
+{% endif %}
+{{ srcset }}

@@ -1,0 +1,170 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "contact-block-kicker": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "<p>Introducing</p>",
+            "enable_line": false,
+            "text_size": 3
+          }
+        },
+        "contact-block-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Nous contacter",
+            "text_size": 10
+          }
+        }
+      },
+      "block_order": [
+        "contact-block-kicker",
+        "contact-block-heading"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Blouson_Phoenix_Jupe_Dublin_1.jpg",
+        "height": "use_screen_one_fifth",
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact": {
+      "type": "section-contact",
+      "blocks": {
+        "name": {
+          "type": "text",
+          "settings": {
+            "title": "Prénom Nom"
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "title": "Email"
+          }
+        },
+        "message": {
+          "type": "body",
+          "settings": {
+            "title": "Message"
+          }
+        }
+      },
+      "block_order": [
+        "name",
+        "email",
+        "message"
+      ],
+      "settings": {
+        "title": "Formulaire de contact",
+        "align_text": "text-left",
+        "button_size": "btn--long",
+        "button_color": "btn--neutral",
+        "button_style": "btn--outline",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "icons": {
+      "type": "section-icons",
+      "blocks": {
+        "icons-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_color": "#aaaaaa",
+            "title": "LIVRAISON GRATUITE",
+            "text": "<p>dès 79€ d'achat</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icons-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-cart-check",
+            "icon_color": "#aaaaaa",
+            "title": "UN DOUTE ?",
+            "text": "<p>14 jours pour changer d'avis</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icons-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-email",
+            "icon_color": "#aaaaaa",
+            "title": "BESOIN D'AIDE",
+            "text": "<p>Notre service client est disponible par email</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "icons-0",
+        "icons-1",
+        "icons-2"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--accent",
+        "icon_size": "icon--medium",
+        "icon_alignment": "icon--top",
+        "layout": "grid--stacked",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "contact",
+    "icons"
+  ]
+}

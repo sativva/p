@@ -1,0 +1,75 @@
+<!-- /snippets/product-custom-color-swatches.liquid -->
+{% liquid
+  comment
+  assign listColorSwatches = settings.list_color_swatches | downcase
+  assign listColorSwatchesHandle = settings.list_color_swatches | handle
+  assign aListColorSwatches = listColorSwatches | newline_to_br | split: '<br />'
+  endcomment
+%}
+{% liquid
+  assign aMetaColor = settings.color_swatches_metafield_color | split: '.'
+  assign aMetaProductsList = settings.color_swatches_metafield_products_list | split: '.'
+  assign metaValueProductsList = product.metafields[aMetaProductsList[0]][aMetaProductsList[1]].value
+%}
+
+{%- if source == 'product' -%}
+  <div class="product__block__custom-color-swatches" style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}>
+    <div class="form__selectors">
+      <div class="radio__inputs radio__inputs--swatch">
+{%- endif -%}
+
+{%- for p in metaValueProductsList -%}
+  {%- liquid
+    comment
+    assign colorHexa = '#eee'
+    assign colorName = ''
+    assign colorNameHandle = ''
+    for option in p.options_with_values
+      assign option_handle = option.name | downcase | lstrip | rstrip | escape_once
+      if option_handle == 'couleur'
+        for value in option.values
+          assign colorName = value
+          assign colorNameHandle = colorName | handle
+        endfor
+      endif
+    endfor
+    endcomment
+  -%}
+  {%- liquid
+    assign colorName = p.metafields[aMetaColor[0]][aMetaColor[1]].value
+    assign colorNameHandle = colorName | handle
+  -%}
+  
+  {%- if colorName != '' -%}
+
+    {% liquid
+      comment
+      if listColorSwatchesHandle contains colorNameHandle
+        for aListColorSwatchesItem in aListColorSwatches
+          assign aListColorSwatchesLine = aListColorSwatchesItem | split: ':'
+          assign aListColorSwatchesLineName = aListColorSwatchesLine[0] | strip | handle
+          assign aListColorSwatchesLineColor = aListColorSwatchesLine[1] | strip
+          if colorNameHandle == aListColorSwatchesLineName
+            assign colorHexa = aListColorSwatchesLineColor
+            break
+          endif
+        endfor
+      endif
+      endcomment
+    %}
+
+    <div class="swatch__button{% if settings.swatches_squares %} swatch__button--square{% endif %}{% if product == p %} active{% endif %}">
+      <a href="{{ p.url }}" title="{{ colorName }}" data-swatch="{{ colorName }}" style="--swatch: {{ colorHexa }};">
+        {{ p.featured_image | img_url: '60x60', crop: 'center' | img_tag: product.featured_image.alt }}
+        <span class="visually-hidden value">{{ colorName }}</span>
+      </a>
+    </div>
+
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if source == 'product' -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}

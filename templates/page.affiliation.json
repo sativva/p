@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "Kookai affiliation",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 10,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_KjWhj6": {
+      "type": "section-double",
+      "blocks": {
+        "image_XmLg3K": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cover-aff-partenaire.gif",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_jnfV8c": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "Le contrat",
+            "text": "<p>Kookai propose un contrat de partenariat basé sur le modèle de la \"commission affiliation\" particulièrement avantageux pour ses futurs franchisés :</p><p>Type du contrat : commission / affiliation</p><p>Durée du contrat : 5ans</p><p>Exclusivité territoriale</p><p>Taux de commission d'affiliation net : 43% </p><p>Frais de port : à charge de kookai</p><p>Reprise intègrale des stocks en fin de saison</p><p>Forfait ouverture : 10 000€</p><p>Formation initiale en magasin : 5jours</p><p>Assistance à l'ouverture : 3 jours</p><p>Plan d'amènagement : avant projet définitif</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XmLg3K",
+        "text_jnfV8c"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_FBaMeb": {
+      "type": "section-double",
+      "blocks": {
+        "image_8JkULX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cover-aff-3b.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_XjAFB6": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "INVESTISSEMENTS & APPORT PERSONNEL",
+            "text": "<p><strong>CRITÈRES & AMÉNAGEMENT BOUTIQUE</strong> :</p><p>Une surface située entre 70 et 120m2</p><p>Zone de chalandise : villes de + de 30.000 habitants</p><p>Travaux gros œuvres (murs, plafond, sol) : estimé par l'agenceur du candidat ou notre agenceur</p><p>Mobilier du concept (meubles muraux, centraux, traversants, caisse) : coût entre <strong>15 000</strong> et <strong>20 000€</strong></p><p> </p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8JkULX",
+        "text_XjAFB6"
+      ],
+      "settings": {
+        "height": "use_pixels_500",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_bKHrFe": {
+      "type": "section-double",
+      "blocks": {
+        "image_pJTbmE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cover-aff2-1.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_WLy8hH": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "CONDITIONS DU PARTENARIAT",
+            "text": "<p><strong>PACK OPÉRATIONNEL COM :</strong> forfait <strong>250€</strong>/mois</p><p>Kit marketing - sacs - plv - catalogues - kit vitrine</p><p>Opération promo et soldes : sms , mailing</p><p>Communication et réseaux sociaux</p><p> </p><p><strong>MATÉRIEL INFORMATIQUE :</strong> forfait <strong>250€</strong>/mois</p><p>Terminal informatique, maintenance et hotline </p><p>solution gestion de caisse fastmag </p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_pJTbmE",
+        "text_WLy8hH"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_3hJibt": {
+      "type": "section-double",
+      "blocks": {
+        "image_WC9erh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/aff4.gif",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_UChyWi": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "VOUS ÊTES LES BIENVENUS",
+            "text": "<p><strong>C O N T A C T : </strong></p><p></p><p><strong>Mr Philippe GAMBIER</strong></p><p>P.G.Consulting </p><p>14 rue Bourbon </p><p>08 000 Charleville Mezieres</p><p> </p><p>Pgambier@kookai.fr</p><p>07 50 95 10 94</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_WC9erh",
+        "text_UChyWi"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_hero_HTyxXa": {
+      "type": "section-hero",
+      "settings": {
+        "image": "shopify://shop_images/logo-kookai_97f86c41-57e2-4ea1-97d3-050c5955ebf5.jpg",
+        "mobile_image": "shopify://shop_images/Capture_d_ecran_2024-11-25_a_13.21.39.png",
+        "height": "use_image",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--tiny",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17325369801b95b214": {
+      "type": "apps",
+      "blocks": {
+        "sk_advanced_form_builder_form_nKMw3x": {
+          "type": "shopify://apps/sk-advanced-form-builder/blocks/form/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
+          "settings": {
+            "show_form": true,
+            "form_token": "327a644e73565476"
+          }
+        }
+      },
+      "block_order": [
+        "sk_advanced_form_builder_form_nKMw3x"
+      ],
+      "settings": {
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_double_KjWhj6",
+    "section_double_FBaMeb",
+    "section_double_bKHrFe",
+    "section_double_3hJibt",
+    "section_hero_HTyxXa",
+    "17325369801b95b214"
+  ]
+}

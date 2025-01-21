@@ -1,0 +1,415 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker-lookbook-block": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "INSTAGRAM",
+            "enable_line": false,
+            "text_size": 3
+          }
+        },
+        "heading-lookbook-block": {
+          "type": "heading",
+          "settings": {
+            "title": "COUPS DE COEUR LOLA",
+            "text_size": 10
+          }
+        }
+      },
+      "block_order": [
+        "kicker-lookbook-block",
+        "heading-lookbook-block"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/robe.png",
+        "mobile_image": "shopify://shop_images/71RO260-1.jpg",
+        "height": "use_pixels_500",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "page-lookbook-4": {
+      "type": "section-look",
+      "blocks": {
+        "product_eEYJht": {
+          "type": "product",
+          "settings": {
+            "product": "top-c4656-diana-veston-col-v-ciel",
+            "position_x": 9,
+            "position_y": 47,
+            "pos": "",
+            "position_x_mobile": 16,
+            "position_y_mobile": 23
+          }
+        },
+        "template--14288112255060__page-lookbook-4-166605059683c691ad-0": {
+          "type": "product",
+          "settings": {
+            "product": "chemisier-c4681-chemise-crop-lula-bleu",
+            "position_x": 35,
+            "position_y": 36,
+            "pos": "",
+            "position_x_mobile": 80,
+            "position_y_mobile": 23
+          }
+        },
+        "product_wEhrX8": {
+          "type": "product",
+          "settings": {
+            "product": "robe-r5929-robe-midi-flora-flora-printed",
+            "position_x": 60,
+            "position_y": 50,
+            "pos": "",
+            "position_x_mobile": 20,
+            "position_y_mobile": 74
+          }
+        },
+        "product_kJ9g4p": {
+          "type": "product",
+          "settings": {
+            "product": "top-c4727-top-bretelles-bertille-blanc-optique",
+            "position_x": 90,
+            "position_y": 36,
+            "pos": "",
+            "position_x_mobile": 90,
+            "position_y_mobile": 73
+          }
+        }
+      },
+      "block_order": [
+        "product_eEYJht",
+        "template--14288112255060__page-lookbook-4-166605059683c691ad-0",
+        "product_wEhrX8",
+        "product_kJ9g4p"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/test_shop_the_look.jpg",
+        "wh_ratio": 2.7,
+        "default_open": true,
+        "dot_color": "palette--dark bg--invert",
+        "card_color": "palette--light bg--neutral",
+        "position": "look__products__holder--right",
+        "image_mobile_enable": true,
+        "image_mobile": "shopify://shop_images/test_shop_the_look_mob.jpg",
+        "wh_ratio_mobile": 0.7,
+        "width": "wrapper--none",
+        "padding_top": 20,
+        "padding_bottom": 10
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "page-lookbook-2": {
+      "type": "section-gallery",
+      "blocks": {
+        "page-lookbook-2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.28_32604ba3.jpg",
+            "link": "https://kookai.fr/products/veste-sportswear-v4564-ariane-veste-kaki"
+          }
+        },
+        "page-lookbook-2-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.21_468c6ed8.jpg",
+            "link": "https://kookai.fr/products/pull-k8162-lolita-debardeur-off-white"
+          }
+        }
+      },
+      "block_order": [
+        "page-lookbook-2-0",
+        "page-lookbook-2-1"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "section_image_VDRqiL": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/bleu.png",
+        "mobile_image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.23_6160450d.jpg",
+        "max_width": 100,
+        "x_align": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 38,
+        "padding_bottom": 4
+      }
+    },
+    "page-lookbook-7": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "pantalon-p5966-diana-pantalon-large-ciel",
+          "top-c4656-diana-veston-col-v-ciel",
+          "veste-v4556-diana-ve-longue-ciel",
+          "robe-r5929-robe-midi-flora-flora-printed"
+        ],
+        "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.23_6160450d.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "heading": "",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "voir les produits",
+        "link": "shopify://products/top-c4656-diana-veston-col-v-ciel",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 10
+      }
+    },
+    "page-lookbook-0": {
+      "type": "section-mosaic",
+      "blocks": {
+        "template--14288112255060__page-lookbook-0-1666050591718034de-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.25_e3fe746a.jpg",
+            "overlay_opacity": 0,
+            "title_text": "",
+            "title_size": 8,
+            "text_align": "text-left tile--bottom",
+            "kicker_text": "",
+            "kicker_size": 3,
+            "link_text": "",
+            "link_url": "shopify://products/chemisier-c4635-letty-chemise-bleu",
+            "link_size": 3
+          }
+        },
+        "3030db7b-d3d9-45f0-9a5b-e9ff36eace55": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.26_e65973a7.jpg",
+            "overlay_opacity": 0,
+            "title_text": "",
+            "title_size": 8,
+            "text_align": "text-left tile--bottom",
+            "kicker_text": "",
+            "kicker_size": 3,
+            "link_text": "",
+            "link_url": "shopify://products/chemisier-c4635-letty-chemise-bleu",
+            "link_size": 3
+          }
+        },
+        "bbc96846-6fd6-4380-9b94-f891807f1b73": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.25_e3fe746a.jpg",
+            "overlay_opacity": 0,
+            "title_text": "",
+            "title_size": 8,
+            "text_align": "text-left tile--bottom",
+            "kicker_text": "",
+            "kicker_size": 3,
+            "link_text": "",
+            "link_url": "shopify://products/short-bermuda-sportw-s0312-neva-short-stone-washed",
+            "link_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "template--14288112255060__page-lookbook-0-1666050591718034de-1",
+        "3030db7b-d3d9-45f0-9a5b-e9ff36eace55",
+        "bbc96846-6fd6-4380-9b94-f891807f1b73"
+      ],
+      "settings": {
+        "first_block_height": "tall",
+        "wh_ratio": 1,
+        "split": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 38,
+        "padding_bottom": 38
+      }
+    },
+    "page-lookbook-6": {
+      "type": "section-richtext",
+      "blocks": {
+        "template--14288112255060__page-lookbook-6-166605104694452869-0": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "<p>Introducing</p>",
+            "enable_line": true,
+            "text_size": 3
+          }
+        },
+        "template--14288112255060__page-lookbook-6-166605104694452869-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Rich text</p>",
+            "heading_tag": "p",
+            "text_size": 8
+          }
+        },
+        "template--14288112255060__page-lookbook-6-166605104694452869-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Break up the images with a brief quote</p>",
+            "text_size": 11,
+            "text_columns": 1
+          }
+        },
+        "template--14288112255060__page-lookbook-6-166605104694452869-3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "Shop all",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--medium",
+            "button_style_1": "btn-text-thick-line",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "template--14288112255060__page-lookbook-6-166605104694452869-0",
+        "template--14288112255060__page-lookbook-6-166605104694452869-1",
+        "template--14288112255060__page-lookbook-6-166605104694452869-2",
+        "template--14288112255060__page-lookbook-6-166605104694452869-3"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_image_zKL8xL": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.22_58362886.jpg",
+        "max_width": 100,
+        "x_align": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_JxERRY": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_4VJDjd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.21_7b88df52.jpg",
+            "link": "https://kookai.fr/products/chemisier-c4623-chemise-wissame-navy"
+          }
+        },
+        "image_cUrzrM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-06-11_a_07.54.25_429c95d3.jpg",
+            "link": "https://kookai.fr/products/chemisier-c4623-chemise-wissame-navy"
+          }
+        }
+      },
+      "block_order": [
+        "image_4VJDjd",
+        "image_cUrzrM"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "page-lookbook-4",
+    "main",
+    "page-lookbook-2",
+    "section_image_VDRqiL",
+    "page-lookbook-7",
+    "page-lookbook-0",
+    "page-lookbook-6",
+    "section_image_zKL8xL",
+    "section_gallery_JxERRY"
+  ]
+}

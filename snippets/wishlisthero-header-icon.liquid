@@ -1,0 +1,21 @@
+{% comment %}
+  Wishlist Hero Snippets -  V 1.0.0
+{% endcomment %}
+{%- assign wishlistHero = shop.metafields.wishlistHero -%}
+{%- assign wishlistHeroIconClass = 'wlh-icon-heart-empty' -%}
+{%- if wishlistHero.WishListHero_iconType -%}
+  {%- assign wishlistHeroIconClass = wishlistHero.WishListHero_iconType -%}
+{%- endif -%}
+
+{%- if wishlistHero.WishListHero_ShowHeaderIcon != 'false' -%}
+  <a class="cart-link wishlist-hero-header-icon navlink" href="#hero-wishlist" arial-label="Open Wishlist">
+  {%- case wishlistHeroIconClass -%}
+    {%- when 'wlh-icon-heart-empty' -%}
+      {%- render 'wlh-icon-heart-empty' ,buttonClasses:'wlh-svg-Icon wlh-svg-icon-heart-empty',buttonStyles:'width:1em;font-size:22px;' -%}
+    {%- when 'wlh-icon-star-empty' -%}
+      {%- render 'wlh-icon-star-empty' ,buttonClasses:'wlh-svg-Icon wlh-svg-icon-star-empty',buttonStyles:'width:1em;font-size:22px;' -%}
+    {%- when 'wlh-icon-bookmark-empty' -%}
+      {%- render 'wlh-icon-bookmark-empty',buttonClasses:'wlh-svg-Icon wlh-svg-icon-bookmark-empty',buttonStyles:'width:1em;font-size:17px;' -%}
+  {%- endcase -%}
+  </a>
+{%- endif -%}

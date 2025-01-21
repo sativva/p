@@ -1,0 +1,93 @@
+<!-- /snippets/animated-icon.liquid -->
+
+{% comment %}
+    Renders an icons in a loop because render can't accept strings as variables.
+
+    Rendering icons in a case/when has performance effects, but this is necessary
+    in order to render an icon based on a setting string.
+
+    All of the icons in this set are stroke icons, not fill icons,
+    so they can be anumated in with svg stroke animations. This is
+    not a list of all icons in the theme.
+
+    Accepts:
+    - filename: {String} name of icon
+
+    Usage:
+    {% render 'animated-icon', filename: block.settings.icon_name %}
+{% endcomment %}
+
+{%- case filename -%}
+  {%- when 'icon-award' -%}
+    {%- render 'icon-award' -%}
+  {%- when 'icon-basket-like' -%}
+    {%- render 'icon-basket-like' -%}
+  {%- when 'icon-basket-return' -%}
+    {%- render 'icon-basket-return' -%}
+  {%- when 'icon-cart-check' -%}
+    {%- render 'icon-cart-check' -%}
+  {%- when 'icon-cart-message' -%}
+    {%- render 'icon-cart-message' -%}
+  {%- when 'icon-chat' -%}
+    {%- render 'icon-chat' -%}
+  {%- when 'icon-dollar' -%}
+    {%- render 'icon-dollar' -%}
+  {%- when 'icon-email' -%}
+    {%- render 'icon-email' -%}
+  {%- when 'icon-lock-card' -%}
+    {%- render 'icon-lock-card' -%}
+  {%- when 'icon-lock-shield' -%}
+    {%- render 'icon-lock-shield' -%}
+  {%- when 'icon-lock-window' -%}
+    {%- render 'icon-lock-window' -%}
+  {%- when 'icon-payment' -%}
+    {%- render 'icon-payment' -%}
+  {%- when 'icon-phone' -%}
+    {%- render 'icon-phone' -%}
+  {%- when 'icon-rating' -%}
+    {%- render 'icon-rating' -%}
+  {%- when 'icon-send' -%}
+    {%- render 'icon-send' -%}
+  {%- when 'icon-shipment-world' -%}
+    {%- render 'icon-shipment-world' -%}
+  {%- when 'icon-shipment' -%}
+    {%- render 'icon-shipment' -%}
+  {%- when 'icon-store' -%}
+    {%- render 'icon-store' -%}
+  {%- when 'icon-support-headphones' -%}
+    {%- render 'icon-support-headphones' -%}
+  {%- when 'icon-animal' -%}
+    {%- render 'icon-animal' -%}
+  {%- when 'icon-earth' -%}
+    {%- render 'icon-earth' -%}
+  {%- when 'icon-leaf' -%}
+    {%- render 'icon-leaf' -%}
+  {%- when 'icon-water' -%}
+    {%- render 'icon-water' -%}
+  {%- when 'icon-truck' -%}
+    {%- render 'icon-truck' -%}
+  {%- when 'icon-animal-paw' -%}
+    {%- render 'icon-animal-paw' -%}
+  {%- when 'icon-gluten-free' -%}
+    {%- render 'icon-gluten-free' -%}
+  {%- when 'icon-iron' -%}
+    {%- render 'icon-iron' -%}
+  {%- when 'icon-legal' -%}
+    {%- render 'icon-legal' -%}
+  {%- when 'icon-recycled' -%}
+    {%- render 'icon-recycled' -%}
+  {%- when 'icon-ruler' -%}
+    {%- render 'icon-ruler' -%}
+  {%- when 'icon-sewing-machine' -%}
+    {%- render 'icon-sewing-machine' -%}
+  {%- when 'icon-shirt' -%}
+    {%- render 'icon-shirt' -%}
+  {%- when 'icon-shoes' -%}
+    {%- render 'icon-shoes' -%}
+  {%- when 'icon-star-rating' -%}
+    {%- render 'icon-star-rating' -%}
+  {%- when 'icon-thread' -%}
+    {%- render 'icon-thread' -%}
+  {%- when 'icon-washer' -%}
+    {%- render 'icon-washer' -%}
+{%- endcase -%}

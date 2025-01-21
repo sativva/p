@@ -1,0 +1,164 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 64,
+        "padding_bottom": 32
+      }
+    },
+    "accordion-section-1": {
+      "type": "section-faq",
+      "blocks": {
+        "accordion_block_1_1": {
+          "type": "text",
+          "settings": {
+            "title": "ECHANGES ET RETOURS",
+            "content": "<p><strong>Nous n'avons pas la possibilité d'annuler et/ou de modifier une commande après sa confirmation.</strong></p><p>Pour la livraison <strong>en France</strong>, vous disposez d’un délai de <strong>14 jours dès réception de votre commande</strong>, pour procéder à un échange ou un remboursement.</p><p>Les échanges sont <strong>gratuits</strong> et peuvent être effectués directement en ligne.</p><p>Les retours doivent être envoyés par voie postale uniquement et sont facturés 5.95€ (correspondant aux frais d'expédition) qui seront déduits du montant total remboursé.</p><p>Pour la livraison <strong>à l'international</strong>, vous disposez d'un délai de <strong>30 jours dès réception de votre commande</strong>, pour retourner vos produits par voie postale uniquement.</p><p>Si vous avez égaré le bon de retour, nous vous demandons de bien vouloir glisser à l'intérieur de votre colis de retour : une feuille comprenant votre numéro de commande, votre nom et prénom ainsi que le détail des articles retournés. </p><h3></h3><h2>ÉCHANGE EN BOUTIQUE </h2><p>Vous avez 30 jours pour échanger votre article KOOKAÏ pour une taille différente ou pour un autre modèle <span style=\"text-decoration:underline\"><strong>directement en boutique (sauf dans nos corners Galeries Lafayette, Printemps et BHV).</strong></span> La valeur d'échange est celle indiquée sur votre bon d'échange (valeur TTC remise déduite). Dans le cas d'un échange contre un produit d'un montant supérieur, la différence sera à votre charge. Dans le cas d'un échange contre un produit d'un montant inférieur, nous ne vous remboursons pas la différence, mais vous pouvez compléter votre achat par un autre article.</p><p><span style=\"text-decoration:underline\">Aucun remboursement n'est pratiqué en boutique</span></p><p>Les produits <strong>Outlet</strong> ne bénéficient pas de l'échange en boutique ou sur le site. Seul le remboursement après retour du produit par colis est possible (se reporter à la rubrique retour ci dessous).</p>"
+          }
+        },
+        "accordion_block_1_2": {
+          "type": "text",
+          "settings": {
+            "title": "PAIEMENTS",
+            "content": "<p><strong>Quels sont les modes de paiement acceptés ? </strong></p><p>Nous acceptons les paiements par carte bancaire et Paypal. Les paiements sont totalement sécurisés par notre partenaire Ogone, leader européen du paiement en ligne.<br/>Le paiement différé ou en plusieurs fois n’est pas disponible sur la e-boutique.<br/><br/><strong>Quelles sont les cartes bancaires acceptées ?</strong></p><p>Les cartes bancaires acceptées sur la boutique en ligne KOOKAÏ sont les suivantes : Visa, Mastercard et American Express.</p>"
+          }
+        },
+        "accordion_block_1_3": {
+          "type": "text",
+          "settings": {
+            "title": "LIVRAISON",
+            "content": "<p><strong>Nous n'avons pas la possibilité d'annuler et/ou de modifier une commande après sa confirmation.</strong></p><p>La livraison de votre commande se fait à l’adresse de votre choix (adresse indiquée lors de la validation de votre commande) en France Métropolitaine. Votre commande est traitée dès sa validation du lundi au vendredi.</p><p>Vous pouvez, à tout moment, suivre l’état de votre commande en vous connectant à votre compte dans la rubrique <a href=\"https://www.kookai.fr/account\">Mes commandes</a></p><p> </p><p><strong>LIVRAISON A DOMICILE EN COLISSIMO : 6,95€ // GRATUITE A PARTIR DE 79€ D’ACHATS</strong><br/><br/>Avec Colissimo, votre commande vous est remise en main propre ou livrée dans votre boîte aux lettres si le format du colis le permet. La livraison Colissimo intervient du lundi au samedi de 9h00 à 12h00. En cas d’impossibilité de distribution, le colis est mis à votre disposition dans votre bureau de Poste de rattachement. Vous disposez d’un délai de 15 jours pour retirer votre colis.</p><p>Dès que votre commande quitte notre entrepôt, vous recevez automatiquement un e-mail vous indiquant le numéro de suivi de votre colis. Avec ce numéro vous pouvez suivre votre colis sur le site de Colissimo (<a href=\"http://www.colissimo.fr/\" target=\"_blank\">colissimo.fr</a>). Vous pouvez également suivre l’état de votre commande en vous connectant à votre compte dans la rubrique <a href=\"https://www.kookai.fr/account\">Mes commandes</a>.</p><p><strong>Délai moyen d'expédition : 2 à 4 jours ouvrés (hors dimanches et jours fériés)</strong><br/><strong>Délai moyen de réception : entre 3 et 6 jours ouvrés (hors dimanches et jours fériés).</strong></p>"
+          }
+        },
+        "text_bzbkEK": {
+          "type": "text",
+          "settings": {
+            "title": "GÉRER VOTRE COMPTE",
+            "content": "<p><strong>Comment créer mon compte ?</strong></p><p>Pour créer votre compte sur la boutique en ligne Kookaï, cliquez sur l'icône représentant un bonhomme en haut à droite, puis renseignez votre adresse email. Vous recevrez un code de sécurité par mail, à renseigner pour valider votre inscription.</p><p><strong>Que faire si mon adresse email existe déjà ? </strong></p><p>Si vous avez déjà un compte client chez nous, le procédé est le même : renseignez le code à six chiffres envoyé sur votre boite mail, et vous accéderez à l'historique de votre compte.</p><p><strong>Comment modifier les informations personnelles  de mon compte ?</strong></p><p>Pour modifier vos informations personnelles, cliquez sur l'icône représentant un bonhomme qui se trouve en haut à droite de la page. Saisissez votre email. Une fois connecté(e), vous pouvez visualiser et modifier vos informations personnelles.</p><p><strong>Comment m’inscrire à la newsletter ?</strong></p><p>Pour vous inscrire à la Newsletter Kookaï, rendez-vous en bas de notre page d'accueil. Vous serez ainsi informé(e) en avant-première de l’ensemble de l’actualité de la marque : offres exclusives, date de début des soldes, nouveautés, lancement de collections, promotions !</p><p><strong>Comment me désinscrire de la newsletter ?</strong></p><p>Vous pouvez vous désabonner de la newsletter en cliquant sur le lien de désabonnement qui se trouve en bas des newsletters que vous recevez.</p>"
+          }
+        },
+        "accordion_block_1_4": {
+          "type": "text",
+          "settings": {
+            "title": "CODE PROMOTIONNEL",
+            "content": "<p>Lorsque vous avez rempli votre panier et terminé votre shopping, saisissez le code dans le champ dédié « Code promo ». Et cliquez ensuite sur « Appliquer ». Lorsque le code est pris en compte, la réduction apparait au panier et la réduction apparait en dessous de « Code promo ». Vous pouvez ensuite valider votre panier et passer à l’étape suivante.</p>"
+          }
+        },
+        "text_UwE3PE": {
+          "type": "text",
+          "settings": {
+            "title": "GUIDE DES TAILLES",
+            "content": "<p>Si vous n'êtes pas sûre de votre taille, n'hésitez pas à vous référer à notre <a href=\"https://kookai.fr/pages/guide-des-tailles\">guide</a>. Si la taille du produit que vous avez commandé ne vous correspond pas, n'hésitez pas à vous rendre en boutique ou à utiliser notre forumlaire de contact pour procéder à un échange de produit.</p>"
+          }
+        },
+        "text_h6aCyX": {
+          "type": "text",
+          "settings": {
+            "title": "MENTIONS LÉGALES",
+            "content": "<p><a href=\"/pages/mentions-legales\" target=\"_blank\" title=\"Mentions Légales et Données Personnelles\">Cliquez ici pour consulter nos mentions légales</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_1_1",
+        "accordion_block_1_2",
+        "accordion_block_1_3",
+        "text_bzbkEK",
+        "accordion_block_1_4",
+        "text_UwE3PE",
+        "text_h6aCyX"
+      ],
+      "settings": {
+        "title": "Questions fréquentes",
+        "title_align": "text-left",
+        "title_size": 8,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "icons": {
+      "type": "section-icons",
+      "blocks": {
+        "icons-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_color": "#aaaaaa",
+            "title": "Free returns",
+            "text": "<p>Returns within 30 days receive a full refund.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icons-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-shipment-world",
+            "icon_color": "#aaaaaa",
+            "title": "Worldwide shipping",
+            "text": "<p>Ship anywhere, rates available at checkout.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icons-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#aaaaaa",
+            "title": "24/7 support",
+            "text": "<p>Call us anytime at 1(800) 555-1234.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "icons-0",
+        "icons-1",
+        "icons-2"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--accent",
+        "icon_size": "icon--medium",
+        "icon_alignment": "icon--top",
+        "layout": "grid--stacked",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "accordion-section-1",
+    "icons"
+  ]
+}

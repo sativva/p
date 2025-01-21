@@ -1,0 +1,65 @@
+<div data-api-content>
+  <div class="drawer__top quickview__modal__top" data-quickview-head>
+
+    <div class="drawer__top__left">
+      {%- render 'product-title', product: product, block: block, section: section -%}
+      {%- render 'product-price', product: product, block: block, section: section -%}
+    </div>
+
+    <button class="drawer__button drawer__close"
+      data-micromodal-close tabindex="-1"
+      aria-label="{{ 'general.accessibility.close' | t }}">
+      {% render 'icon-close' %}
+    </button>
+  </div>
+
+  <div class="drawer__body" data-drawer-scrolls>
+    {%- if product.media.size > 0 -%}
+      <div class="quickview__modal__images" data-product-slideshow data-slideshow-desktop-style="none" data-slideshow-mobile-style="none">
+        {% for media in product.media %}
+          {% render 'media', media: media, section: section %}
+        {% endfor %}
+      </div>
+    {%- endif -%}
+  </div>
+
+    <div class="quickview__form">
+      {%- liquid
+        assign uniq_id = 'quickview-form-' | append: section.id | append: '-' | append: product.id
+
+        assign sibs_string = product.metafields.theme.siblings.value
+        assign sibs_add_hidden_cutline_attr = false
+        if sibs_string
+          assign sibs_collection = collections[sibs_string]
+          assign cutline_value = product.metafields.theme.cutline.value
+          if sibs_collection.products_count > 1 and cutline_value
+            assign cutline_down = product.metafields.theme.cutline.value | downcase
+            assign title_down = product.title | downcase
+            unless title_down contains cutline_down
+              assign sibs_add_hidden_cutline_attr = true
+            endunless
+          endif
+        endif
+      -%}
+      {%- if sibs_add_hidden_cutline_attr -%}
+        {% comment %} If the color is not in the product title, add the cutline to the cart as a property {% endcomment %}
+        <input type="hidden" form="{{ uniq_id }}" name="properties[{{ 'general.siblings.label' | t }}]" value="{{ cutline_value }}">
+      {%- endif -%}
+
+      <div class="product__form__outer product__align-left">
+        <button type="button" class="quickview__form__toggle btn standard__cta is-active hide" data-toggle-button>
+          <span>{{ 'products.general.hide_options' | t }}</span>
+          <span>{{ 'products.general.show_options' | t }}</span>
+        </button>
+
+        <div class="quickview__form__wrapper is-expanded" data-quickview-form-area data-product-form-wrapper>
+          {%- render 'product-variant-options' product: product, uniq_id: uniq_id -%}
+          {%- render 'product-subscription' product: product, uniq_id: uniq_id, enable: true -%}
+          {%- render 'product-buttons' product: product, uniq_id: uniq_id -%}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+{% if shop.metafields.wcp_status.wcp_status != 'disabled' and customer %}
+{% assign wcp_wholesale_customer = false %}
+{% assign active_discounts = shop.metafields.wcp_active_discounts.wcp_active_discounts %}
+{% assign active_discounts_array = active_discounts | split: ',' %}
+{% assign customer_tags = customer.tags | downcase %}
+{% assign active_discounts = active_discounts | downcase %}
+{% for discount_key in active_discounts_array %}
+{% assign key_split = discount_key | split: '-' %}
+{% assign key_split_length = key_split | size %}
+{% if key_split_length > 2 %}
+{% assign removeable_key = key_split.last | prepend: '-' %}
+{% assign wcp_customer_tag = discount_key | remove_last: removeable_key %}
+{% else %}
+{% assign wcp_customer_tag = key_split[0] %}
+{% endif %}
+{% assign wcp_customer_tag = wcp_customer_tag | downcase %}
+{% if customer_tags contains wcp_customer_tag %}
+{% assign wcp_wholesale_customer = true %}
+{% endif %}
+{% endfor %}
+{% endif %}
+ 
+{% if wcp_wholesale_customer == true %}
+
+<script>
+
+    function addSaleBadge(){
+    let intervalCounter = 0; 
+    const checkExist = setInterval(function () {
+        intervalCounter++;
+        if (document.querySelector('.wpd-ext-compare-at-price').nextSibling.wholeText) {
+          const productCardArr = document.querySelectorAll('product-grid-item, .product-single');
+          productCardArr.forEach((prodCardEl)=>{
+            if(prodCardEl){
+              
+              const salePrice = parseFloat(prodCardEl.querySelector('.wpd-ext-compare-at-price').nextSibling.wholeText.replace('€', '').replace(',', '.'));
+              const originalPrice = parseFloat(prodCardEl.querySelector('.wpd-ext-compare-at-price').outerText.replace('€', '').replace(',', '.'));
+              // console.log('salePrice =>', salePrice)
+              // console.log('originalPrice =>', originalPrice)
+              
+              if(salePrice < originalPrice ){
+                
+                discountPercentageCalc = Math.round(((originalPrice-salePrice)/originalPrice)*100);
+                if(prodCardEl.classList.contains('product-single')){
+                  prodCardEl.querySelector('.product__grid').insertAdjacentHTML('beforeend',  `
+                    <div class="product__badge product__badge--sale">-  ${discountPercentageCalc}%</div>
+                  `)
+                } else {
+                    prodCardEl.querySelector('.product-grid-item__images').insertAdjacentHTML('afterend',  `
+                    <div class="product__badge product__badge--sale">-  ${discountPercentageCalc}%</div>
+                  `)
+                }
+                
+                
+              }
+            }
+          })
+          clearInterval(checkExist);
+        } else {
+            if(intervalCounter >= 100){
+            clearInterval(checkExist);
+            }
+        }
+    }, 100);
+    }
+  window.addEventListener("DOMContentLoaded", (event) => {
+    addSaleBadge()
+  });
+</script>
+  
+{% endif %}	

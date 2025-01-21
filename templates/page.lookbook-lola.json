@@ -1,0 +1,579 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker-lookbook-block": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "INSTAGRAM",
+            "enable_line": false,
+            "text_size": 3
+          }
+        },
+        "heading-lookbook-block": {
+          "type": "heading",
+          "settings": {
+            "title": "COUPS DE COEUR LOLA",
+            "text_size": 10
+          }
+        }
+      },
+      "block_order": [
+        "kicker-lookbook-block",
+        "heading-lookbook-block"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Banniere_kookai_h24_2_7.png",
+        "mobile_image": "shopify://shop_images/IMG_1856_3.jpg",
+        "height": "use_pixels_500",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "section_gallery_e9X4MK": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_pxK4TK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1857_3.jpg",
+            "link": "https://kookai.fr/products/pantalon-sportwear-d4383-jenny-jean-stone?_pos=1&_sid=f6e5b54f2&_ss=r"
+          }
+        },
+        "image_JCrq99": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1854_3.jpg",
+            "link": "https://kookai.fr/products/veste-sportwear-v4572-jenny-veste-jean-stone?_pos=2&_sid=f6e5b54f2&_ss=r"
+          }
+        },
+        "image_JRgEqK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1853_3.jpg",
+            "link": "https://kookai.fr/products/veste-sportwear-v4572-jenny-veste-jean-stone?_pos=2&_sid=f6e5b54f2&_ss=r"
+          }
+        }
+      },
+      "block_order": [
+        "image_pxK4TK",
+        "image_JCrq99",
+        "image_JRgEqK"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_split_jeAghK": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "collection-suzanne",
+        "product_list": [
+          "pantalon-sportwear-p6008-suzanne-ps-beige",
+          "veste-sportwear-v4589-suzanne-ve-beige"
+        ],
+        "image": "shopify://shop_images/IMG_1862_3.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "kicker": "Collection",
+        "heading": "Suzanne",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "View products",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 10,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_RYgwdU": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_Gq7TNJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8784.jpg",
+            "link": "https://kookai.fr/products/chemisier-c4707-bella-chemise-champagne"
+          }
+        },
+        "image_grtGai": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8734.jpg",
+            "link": "https://kookai.fr/products/chemisier-c4718-lea-blouse-kaki"
+          }
+        }
+      },
+      "block_order": [
+        "image_Gq7TNJ",
+        "image_grtGai"
+      ],
+      "disabled": true,
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "page-lookbook-4": {
+      "type": "section-look",
+      "blocks": {
+        "product_YrgxpB": {
+          "type": "product",
+          "settings": {
+            "product": "trench-m0356-asher-trench-long-noir",
+            "position_x": 50,
+            "position_y": 50,
+            "pos": "",
+            "position_x_mobile": 50,
+            "position_y_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "product_YrgxpB"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_9234.jpg",
+        "wh_ratio": 0.8,
+        "default_open": true,
+        "dot_color": "palette--dark bg--invert",
+        "card_color": "palette--light bg--neutral",
+        "position": "look__products__holder--left",
+        "image_mobile_enable": false,
+        "wh_ratio_mobile": 1,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 10
+      }
+    },
+    "collection_split_q3amNB": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "veste-v4577-rosie-veste-noir",
+          "jupe-j5743-rosie-jupe-noir",
+          "veste-v4577-rosie-veste-creme",
+          "jupe-j5743-rosie-jupe-creme"
+        ],
+        "image": "shopify://shop_images/IMG_1864_3.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 5,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "heading": "",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "View products",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 10,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_split_pgdei7": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "chemisier-c4718-lea-blouse-kaki",
+          "jupe-sportwear-j5759-sun-jupe-courte-beige"
+        ],
+        "image": "shopify://shop_images/IMG_8767.jpg",
+        "mobile_image": "shopify://shop_images/IMG_8767.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "heading": "",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "Voir les produits",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 10,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_jbrbmb": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_hztbyH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8759.png",
+            "link": "https://kookai.fr/products/pantalon-p6025-sheila-combinaison-noir"
+          }
+        },
+        "image_Ai83xa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8761_0b81e1cf-5897-41b9-b4aa-d961a089d91a.png",
+            "link": "https://kookai.fr/products/pantalon-p6025-sheila-combinaison-noir"
+          }
+        }
+      },
+      "block_order": [
+        "image_hztbyH",
+        "image_Ai83xa"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "collection_split_8URKPU": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "veste-c4693bis-mathilda-veston-noir",
+          "pantalon-p6005bis-mathilda-pa-th-noir",
+          "short-s0327bis-mathilda-short-noir"
+        ],
+        "image": "shopify://shop_images/IMG_8730.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "heading": "",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "voir les produits",
+        "link": "shopify://products/veste-c4693bis-mathilda-veston-noir",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 10
+      }
+    },
+    "section_look_fQfkGf": {
+      "type": "section-look",
+      "blocks": {
+        "product_tfW3L9": {
+          "type": "product",
+          "settings": {
+            "product": "60996-z2",
+            "position_x": 50,
+            "position_y": 50,
+            "pos": "",
+            "position_x_mobile": 50,
+            "position_y_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "product_tfW3L9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/DSC03656.png",
+        "wh_ratio": 1.4,
+        "default_open": true,
+        "dot_color": "palette--dark bg--invert",
+        "card_color": "palette--light bg--neutral",
+        "position": "look__products__holder--right",
+        "image_mobile_enable": false,
+        "wh_ratio_mobile": 1,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 10
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "page-lookbook-7": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "veste-v4575-kendall-veste-noir",
+          "pantalon-p6007-pantalon-kendall-noir",
+          "60996-z2"
+        ],
+        "image": "shopify://shop_images/IMG_8768.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "heading": "",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "voir les produits",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 10
+      }
+    },
+    "page-lookbook-2": {
+      "type": "section-gallery",
+      "blocks": {
+        "page-lookbook-2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8772.jpg",
+            "link": "https://kookai.fr/products/veste-v4575-kendall-veste-noir"
+          }
+        },
+        "page-lookbook-2-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8773.png",
+            "link": "https://kookai.fr/products/pantalon-p6007-pantalon-kendall-noir"
+          }
+        }
+      },
+      "block_order": [
+        "page-lookbook-2-0",
+        "page-lookbook-2-1"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "collection_split_VYX8nH": {
+      "type": "collection-split",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "veste-v4497-marvin-ve-kaki",
+          "short-s0328-marvin-short-kaki"
+        ],
+        "image": "shopify://shop_images/IMG_1876.jpg",
+        "mobile_image": "shopify://shop_images/IMG_1876.jpg",
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 5,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "heading": "",
+        "heading_tag": "p",
+        "text_color": "text--white",
+        "link_text": "View products",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.3,
+        "limit": 10,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-top",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_image_VDRqiL": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/Banniere_kookai_h24_2_4.png",
+        "mobile_image": "shopify://shop_images/IMG_4608.jpg",
+        "max_width": 100,
+        "x_align": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 38,
+        "padding_bottom": 4
+      }
+    },
+    "page-lookbook-6": {
+      "type": "section-richtext",
+      "blocks": {
+        "template--14288112255060__page-lookbook-6-166605104694452869-0": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "<p>Introducing</p>",
+            "enable_line": true,
+            "text_size": 3
+          }
+        },
+        "template--14288112255060__page-lookbook-6-166605104694452869-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Rich text</p>",
+            "heading_tag": "p",
+            "text_size": 8
+          }
+        },
+        "template--14288112255060__page-lookbook-6-166605104694452869-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Break up the images with a brief quote</p>",
+            "text_size": 11,
+            "text_columns": 1
+          }
+        },
+        "template--14288112255060__page-lookbook-6-166605104694452869-3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "Shop all",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--medium",
+            "button_style_1": "btn-text-thick-line",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "template--14288112255060__page-lookbook-6-166605104694452869-0",
+        "template--14288112255060__page-lookbook-6-166605104694452869-1",
+        "template--14288112255060__page-lookbook-6-166605104694452869-2",
+        "template--14288112255060__page-lookbook-6-166605104694452869-3"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "section_gallery_e9X4MK",
+    "collection_split_jeAghK",
+    "section_gallery_RYgwdU",
+    "page-lookbook-4",
+    "collection_split_q3amNB",
+    "collection_split_pgdei7",
+    "section_gallery_jbrbmb",
+    "collection_split_8URKPU",
+    "section_look_fQfkGf",
+    "main",
+    "page-lookbook-7",
+    "page-lookbook-2",
+    "collection_split_VYX8nH",
+    "section_image_VDRqiL",
+    "page-lookbook-6"
+  ]
+}

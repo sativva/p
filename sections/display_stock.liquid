@@ -1,0 +1,39 @@
+<section>
+  <div class="inventory-warning-section">
+    <ul>
+      {% for product in collections.all.products %}
+        {% assign total_inventory = 0 %}
+        {% for variant in product.variants %}
+          {% assign total_inventory = total_inventory | plus: variant.inventory_quantity %}
+        {% endfor %}
+
+        {% if total_inventory > 0 and total_inventory < section.settings.product_limit %}
+          <li>
+            <p>{{ product.title }}</p>
+            <p>{{ section.settings.warning_text }}</p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Inventory Warning Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "warning_text",
+      "label": "Text to display",
+      "default": "Only a few items left"
+    },
+    {
+      "type": "number",
+      "id": "limit",
+      "label": "How many products",
+      "default": 5
+    }
+  ]
+}
+{% endschema %}

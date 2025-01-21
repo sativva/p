@@ -1,0 +1,377 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "prct_Tmht3L": {
+          "type": "prct",
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": 6,
+            "product_show_cutline": true,
+            "show_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 0
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": 3,
+            "padding_bottom": 30
+          }
+        },
+        "sizes-remaining": {
+          "type": "size-remaining",
+          "disabled": true,
+          "settings": {
+            "info_page": "guide-des-tailles",
+            "show_remaining": false,
+            "show_remaining_style": "low",
+            "countdown": 10,
+            "padding_bottom": 0
+          }
+        },
+        "kleep_kookai_button_ja4zxr": {
+          "type": "shopify://apps/kleep-kookai/blocks/button/00d57d22-83a7-4b68-ad4a-aa80af85751c",
+          "settings": {
+            "custom_button_text_toggle": false,
+            "custom_find_size_text": "",
+            "custom_recommended_size_text": "",
+            "image_url": "",
+            "image_size": 20,
+            "default_font_family": true,
+            "font_family": "serif",
+            "text_style": "normal",
+            "text_transform": "none",
+            "text_weight": "400",
+            "text_size": 12,
+            "text_underline": true,
+            "text_underline_offset": 1,
+            "text_color": "#4b4b4b",
+            "bg_color": "#ffffff",
+            "border_color": "#ffffff",
+            "border_width": 0,
+            "center": false,
+            "margin_y": 0,
+            "margin_x": 0,
+            "padding_t": 0,
+            "padding_r": 0,
+            "padding_b": 0,
+            "padding_l": 0,
+            "border_radius": 0
+          }
+        },
+        "variants": {
+          "type": "variant-selectors",
+          "settings": {
+            "info_page": "",
+            "option_space": 30,
+            "padding_bottom": 0
+          }
+        },
+        "custom_color_swatches_REzT3w": {
+          "type": "custom-color-swatches",
+          "settings": {
+            "padding_bottom": 30
+          }
+        },
+        "subscriptions": {
+          "type": "subscription",
+          "settings": {
+            "subscriptions_enable_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "back_in_stock_customer_alerts_app_block_89hNU3": {
+          "type": "shopify://apps/back-in-stock-customer-alerts/blocks/app-block/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+          "settings": {
+            "caption": "Victime de son succès : M'avertir du retour en stock",
+            "font_size": 16,
+            "color": "#1a1a1a",
+            "background_color": "#d9eeef",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "classes": "button button--full-width",
+            "style": "text-decoration:none"
+          }
+        },
+        "buttons": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": false,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 0
+          }
+        },
+        "socloz_oms_platform_ereservation_nJktbE": {
+          "type": "shopify://apps/socloz-oms-platform/blocks/ereservation/c6a7c761-d946-44db-9010-2f17d35f5c59",
+          "settings": {}
+        },
+        "loyoly_product_point_FM7nQN": {
+          "type": "shopify://apps/loyoly/blocks/product_point/f8398f67-b476-4b74-89b8-cb199b7011c9",
+          "settings": {
+            "product": "{{product}}",
+            "background": "#d9eeef",
+            "corner_radius": 0,
+            "show_icon": true,
+            "title_font": "abel_n4",
+            "title_color": "#525252",
+            "title_font_size": 14,
+            "title_font_weight": 600,
+            "description_font": "abel_n4",
+            "description_color": "#525252",
+            "description_font_size": 14,
+            "description_font_weight": 400
+          }
+        },
+        "text_3ynKwW": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Vous pourrez payer en 3 fois sans frais</p>",
+            "padding_bottom": 20
+          }
+        },
+        "live_shopping_by_livemeup_multi_shoppables_H8G73i": {
+          "type": "shopify://apps/live-shopping-by-livemeup/blocks/multi-shoppables/82ccf4ed-67f8-4725-9167-e54475d4748e",
+          "settings": {
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "block_position": "justify-content: center;",
+            "rounded_borders": true,
+            "gap": 8,
+            "size": 80,
+            "border_color": "",
+            "border_thickness": 1,
+            "font_size": 12,
+            "text_color": ""
+          }
+        },
+        "wishlist_hero_custom_product_button_mVQ4dH": {
+          "type": "shopify://apps/wishlist-hero/blocks/custom-product-button/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "displayButtonMode": "~",
+            "contentAlignment": "center",
+            "buttonAlignment": "center",
+            "buttonFullwidth": true,
+            "removeBoxShadowAndBorder": false,
+            "horizontalPadding": 20,
+            "iconTopOffset": 0,
+            "addedCssClassNames": "",
+            "addedContainerStyles": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "style": "tabs",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Détails",
+            "icon_name_1": "",
+            "raw_content_1": "{{ product.metafields.custom.details | metafield_tag }}",
+            "title_2": "Composition",
+            "icon_name_2": "",
+            "raw_content_2": "<p>{{ product.metafields.fmsync.matiere.value }}</p>",
+            "title_3": "Sizing",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "icon_Wjcb4T": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_color": "#4b4b4b",
+            "text": "<p>Livraison offerte dès 79€ - Retours sous 14 jours</p>",
+            "padding_bottom": 8
+          }
+        },
+        "icon_XbpUKw": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shipment",
+            "icon_color": "#424242",
+            "text": "<p><a href=\"/pages/livraison-et-retour\" target=\"_blank\" title=\"Livraison et retour\">Voir nos conditions de livraison et retours</a></p>",
+            "padding_bottom": 8
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "title": "SHOPPEZ LE LOOK",
+            "upsell_type": "product_grouping",
+            "product": "",
+            "upsell_product_list": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+            "upsell_list_limit": 3,
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "prct_Tmht3L",
+        "title",
+        "price",
+        "sizes-remaining",
+        "kleep_kookai_button_ja4zxr",
+        "variants",
+        "custom_color_swatches_REzT3w",
+        "subscriptions",
+        "back_in_stock_customer_alerts_app_block_89hNU3",
+        "buttons",
+        "socloz_oms_platform_ereservation_nJktbE",
+        "loyoly_product_point_FM7nQN",
+        "text_3ynKwW",
+        "live_shopping_by_livemeup_multi_shoppables_H8G73i",
+        "wishlist_hero_custom_product_button_mVQ4dH",
+        "description",
+        "icon_Wjcb4T",
+        "icon_XbpUKw",
+        "upsell"
+      ],
+      "settings": {
+        "layout": "thumbnails-left@slides",
+        "image_width": "wide",
+        "image_spacing": 10,
+        "align": "left",
+        "bg": "palette--light bg--neutral",
+        "mobile_layout": "slideshow",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "alt_text_enable": true,
+        "alt_text_icon": "icon-ruler",
+        "product_breadcrumbs_enable": true,
+        "product_breadcrumbs_list": [],
+        "width": "wrapper",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "related": {
+      "type": "related",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading": "Vous aimerez aussi...",
+        "heading_tag": "h2",
+        "bg": "palette--light bg--neutral",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_small": 1.2,
+        "related_products_enable": false,
+        "limit": 6,
+        "product_recommendations_heading": "Nos produits similaires",
+        "show_recently_viewed": true,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "product_recently_heading": "Vos derniers produits consultés",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_list_collections_products_areCEN": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_3MncVV": {
+          "type": "collection",
+          "settings": {
+            "collection": "meilleures-ventes",
+            "title": "Nos best sellers",
+            "link_text": "",
+            "enable_item": false,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "collection_3MncVV"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "grid": 6,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_DCyEWz": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_j3rE88": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_GEVbqd": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_fAfUVM": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_j3rE88",
+        "image_GEVbqd",
+        "image_fAfUVM"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "section_list_collections_products_areCEN",
+    "section_gallery_DCyEWz"
+  ]
+}

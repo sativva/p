@@ -1,0 +1,246 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_richtext_wxNhH7": {
+      "type": "section-richtext",
+      "blocks": {
+        "heading_8FAgby": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_tag": "h1",
+            "text_size": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_8FAgby"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero": {
+      "type": "section-hero",
+      "settings": {
+        "image": "shopify://shop_images/Capture_d_ecran_2024-07-17_a_11.33.39.png",
+        "height": "use_image",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "section_double_XeKetz": {
+      "type": "section-double",
+      "blocks": {
+        "image_MwhVJb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2024-07-17_a_11.33.48.png",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_zYbb4D": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "Qui sommes nous ?",
+            "text": "<p>Créée à Paris en 1983, KOOKAÏ innove en remettant au goût du jour la maille colorée de qualité, et convainc rapidement une communauté enthousiaste séduite tant par la créativité des collections que le côté avant-gardiste de ses communications.</p><p>Nos collections sont désormais à nouveau conçue <strong>dans nos studios de Paris</strong>, dans le cadre d'un processus créatif toujours inspiré par la femme KOOKAÏ.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_MwhVJb",
+        "text_zYbb4D"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_QMqtNm": {
+      "type": "section-double",
+      "blocks": {
+        "text_qGmtFY": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "Une aventure humaine !",
+            "text": "<p>Aujourd'hui, malgré plus de trois décennies d'évolution, KOOKAÏ reste fidèle à ses origines en proposant une collection imprégnée de chic parisien, et en continuant à offrir aux femmes l'opportunité d'embrasser leur individualité et le pouvoir d'expression à travers leur garde-robe.</p><p>Dans ses boutiques françaises, KOOKAÏ offre une expérience unique grâce à laquelle la femme KOOKAÏ peut transcender les frontières de la mode - défiant les tendances et créant les siennes.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "Trouver une boutique",
+            "button_url": "https://kookai.fr/apps/store-locator",
+            "button_color": "btn--secondary",
+            "button_style": "btn btn--long",
+            "text_color": "text--neutral",
+            "bg_color": "#f5f5f5"
+          }
+        },
+        "image_iTWGGE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2024-07-17_a_11.33.56.png",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_qGmtFY",
+        "image_iTWGGE"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 50,
+        "borders": false,
+        "bg_color": "#ffffff",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_tQyWia": {
+      "type": "section-double",
+      "blocks": {
+        "video_y7aer6": {
+          "type": "video",
+          "settings": {
+            "video_bg": "shopify://files/videos/Story 42 - 16.07.24.mp4",
+            "object_position": "center-center",
+            "video_link": "",
+            "popup_text": "",
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_mk7Tcd": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "Rencontre",
+            "text": "<p>Au sein de nos bureaux parisiens, notre équipe de style travaille au quotidien pour créer des modèles uniques, originaux et de qualité tout en respectant l'ADN de notre marque.</p><p>Choix des couleurs, matières, imprimés... chaque détaille compte pour créer nos collections</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "#",
+            "button_color": "btn--primary",
+            "button_style": "btn btn--long",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_y7aer6",
+        "text_mk7Tcd"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "section_richtext_wxNhH7",
+    "hero",
+    "main",
+    "section_double_XeKetz",
+    "section_double_QMqtNm",
+    "section_double_tQyWia"
+  ]
+}

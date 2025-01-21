@@ -1,0 +1,26 @@
+<!-- /snippets/product-prct.liquid -->
+{% if index == 2 %}
+  <div class="data-wpd-hide product__block__prct"{% if block %} style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}{% endif %}>
+    <div class="product__price__wrap">
+      <div class="product__price__main" data-price-wrapper>
+        <span data-price-off2 class="product__price--off hide">
+          {% comment %}<em>•</em>{% endcomment %}
+          {{ 'products.product.save' | t }}
+          <span data-price-off-amount2></span>
+        </span>
+      </div>
+    </div>
+  </div>
+{% elsif index == 3 %}
+  <div class="product__block__prct"{% if block %} style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}{% endif %}>
+    <div class="product__price__wrap">
+      <div class="product__price__main" data-price-wrapper>
+        <span data-price-off3 class="product__price--off hide">
+          {% comment %}<em>•</em>{% endcomment %}
+          {{ 'products.product.save' | t }}
+          <span data-price-off-amount3></span>
+        </span>
+      </div>
+    </div>
+  </div>
+{% endif %}

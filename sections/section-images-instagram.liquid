@@ -1,0 +1,277 @@
+<!-- /sections/section-images-instagram.liquid -->
+{% if product.metafields.custom.images_instagram != blank %}
+  {%- liquid
+    assign wrapper_class = section.settings.width
+    if section.settings.width == 'wrapper--full'
+      assign wrapper_class = wrapper_class | append: ' clearfix'
+    endif
+  
+    assign show_mobile_bar = false
+    assign show_desktop_bar = false
+    if section.settings.progress_bar == 'mobile'
+      assign show_mobile_bar = true
+    endif
+    if section.settings.progress_bar == 'desktop'
+      assign show_desktop_bar = true
+    endif
+    if section.settings.progress_bar == 'both'
+      assign show_mobile_bar = true
+      assign show_desktop_bar = true
+    endif
+  
+    assign section_no_title_class = 'section-without-title'
+    if section.settings.width == 'wrapper--narrow' or section.settings.width == 'wrapper--tiny'
+      assign section_no_title_class = section_no_title_class | append: ' not-moved-arrows'
+    endif
+  -%}
+  
+  <div class="frame {{ section.settings.bg }} {{ section_no_title_class }}
+    {% if show_mobile_bar %} section-without-padding-mobile{% endif %}"
+    data-section-id="{{ section.id }}"
+    data-section-type="gallery"
+    style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
+    <div class="{{ wrapper_class }} section-padding slides-mobile-outer" data-wrapper>
+      {% if section.settings.heading != blank %}
+        <div class="standard__heading collection-list__heading__text">
+          <{{ section.settings.heading_tag }} class="heading-size-7 m-0">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
+        </div>
+      {% endif %}
+      <flickity-carousel>
+        <div
+          data-carousel
+          data-grid
+          data-grid-large
+          data-grid-medium
+          data-grid-small
+          style="
+            --grid-large-items: {{ section.settings.grid_large }};
+            --grid-medium-items: {{ section.settings.grid_medium }};
+            --grid-small-items: {{ section.settings.grid_mobile }};"
+          data-options='{"watchCSS": {{ show_mobile_bar }}}'
+          {% if show_desktop_bar %}data-carousel-progress{% endif %}
+          {% if show_mobile_bar %}data-custom-scrollbar-items{% endif %}
+          {% unless section.settings.add_gutters %}data-grid-no-gutters{% endunless %}
+          class="gallery slides-mobile-inner{% if show_mobile_bar %} flickity-disabled-mobile{% endif %}">
+          {% for image in product.metafields.custom.images_instagram.value %}
+            <div class="gallery__item" data-item data-carousel-slide>
+              {%- capture sizes -%}
+                {%- render 'image-grid-sizes',
+                  columns_desktop: section.settings.grid_large,
+                  columns_tablet: section.settings.grid_medium,
+                  columns_mobile: section.settings.grid_mobile,
+                  section_width: section.settings.width
+                %}
+              {%- endcapture -%}
+  
+              {%- capture srcset -%}
+                {%- render 'image-grid-srcset',
+                  image: image,
+                  columns_desktop: section.settings.grid_large,
+                  columns_tablet: section.settings.grid_medium,
+                  columns_mobile: section.settings.grid_mobile,
+                  section_width: section.settings.width
+                %}
+              {%- endcapture -%}
+  
+              <div class="gallery__item__wrapper has-zoom-animation" data-grid-slide>
+                {%- if section.settings.scale_image -%}
+                  {%- render 'image', cover: true, img_object: image, wh_ratio: section.settings.wh_ratio, sizes: sizes, srcset: srcset, loading: 'lazy' -%}
+                {%- else -%}
+                  {%- render 'image', cover: true, img_object: image, sizes: sizes, srcset: srcset, loading: 'lazy' -%}
+                {%- endif -%}
+  
+                <div class="gallery__zoom">
+                  {% render 'image-zoom', image: image, unique: forloop.index %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+  
+        {% if show_desktop_bar %}
+          <div class="custom-scrollbar{% if show_mobile_bar %} medium-up--show{% else %} large-up--show{% endif %}">
+            <div class="custom-scrollbar__track" data-carousel-track></div>
+          </div>
+        {% endif %}
+  
+        {% if show_mobile_bar %}
+          <div class="custom-scrollbar small-down--show" data-custom-scrollbar>
+            <div class="custom-scrollbar__track" data-custom-scrollbar-track></div>
+          </div>
+        {% endif %}
+      </flickity-carousel>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Images Instagram",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "heading_tag",
+        "label": "Heading tag",
+        "default": "p",
+        "options": [
+          { "value": "h1", "label": "H1"},
+          { "value": "h2", "label": "H2"},
+          { "value": "h3", "label": "H3"},
+          { "value": "h4", "label": "H4"},
+          { "value": "h5", "label": "H5"},
+          { "value": "h6", "label": "H6"},
+          { "value": "p", "label": "P"},
+          { "value": "span", "label": "SPAN"},
+          { "value": "div", "label": "DIV"}
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Images"
+      },
+      {
+        "type": "checkbox",
+        "id": "scale_image",
+        "label": "Scale images",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "wh_ratio",
+        "min": 0.5,
+        "max": 5,
+        "step": 0.1,
+        "unit": ":1",
+        "label": "Image scaling ratio",
+        "info": "Tall to wide",
+        "default": 1
+      },
+      {
+        "type": "select",
+        "id": "bg",
+        "label": "Background color",
+        "default": "palette--light bg--neutral",
+        "options": [
+          { "value": "palette--light bg--neutral", "label": "Default"},
+          { "value": "palette--light bg--accent", "label": "Light"},
+          { "value": "palette--dark bg--invert", "label": "Dark"},
+          { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
+          { "value": "palette--bright bg--bright", "label": "Bright"},
+          { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "add_gutters",
+        "label": "Add gutters",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "progress_bar",
+        "label": "Progress bar style",
+        "default": "mobile",
+        "options": [
+          {
+            "value": "hidden",
+            "label": "Hidden"
+          },
+          {
+            "value": "mobile",
+            "label": "Mobile only"
+          },
+          {
+            "value": "desktop",
+            "label": "Desktop only"
+          },
+          {
+            "value": "both",
+            "label": "Mobile and desktop"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Items per row"
+      },
+      {
+        "type":    "range",
+        "id":      "grid_large",
+        "min":     1,
+        "max":     6,
+        "step":    1,
+        "label":   "Desktop",
+        "default": 3
+      },
+      {
+        "type":    "range",
+        "id":      "grid_medium",
+        "min":     1,
+        "max":     4,
+        "step":    1,
+        "label":   "Tablet",
+        "default": 2
+      },
+      {
+        "type":    "range",
+        "id":      "grid_mobile",
+        "min":     1,
+        "max":     3,
+        "step":    0.1,
+        "label":   "Mobile",
+        "default": 1.2
+      },
+      {
+        "type": "header",
+        "content": "Section spacing"
+      },
+      {
+        "type": "select",
+        "id": "width",
+        "label": "Width",
+        "default": "wrapper",
+        "options": [
+          { "value": "wrapper--none", "label": "Full width" },
+          { "value": "wrapper--full", "label": "Full width padded" },
+          { "value": "wrapper", "label": "Page width" },
+          { "value": "wrapper--narrow", "label": "Page width narrow" },
+          { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 180,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 180,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "Images Instagram",
+        "category": "Image"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["header","aside"]
+    }
+  }
+{% endschema %}

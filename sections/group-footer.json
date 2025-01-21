@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "linklist-1": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer-service-client",
+            "title": "SERVICE CLIENT",
+            "accordion_default": "accordion-is-open"
+          }
+        },
+        "linklist_MR9t4a": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer-plus",
+            "title": "PLUS",
+            "accordion_default": ""
+          }
+        },
+        "linklist-2": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer-important-info",
+            "title": "INFO IMPORTANTES",
+            "accordion_default": ""
+          }
+        },
+        "text-3": {
+          "type": "text",
+          "settings": {
+            "title": "CRÉEZ VOTRE LOOK KOOKAÏ",
+            "text": "<p>La collection KOOKAÏ a été conçue pour vous donner la liberté d'exprimer votre propre style, à travers une sélection infinie de styles, des incontournables intemporels aux looks tendances et aux pièces de caractère.</p><p>Notre collection de <a href=\"https://kookai.fr/search?q=basique\" title=\"Collections basiques Kookai\"><span style=\"text-decoration:underline\">basiques</span></a> est créée à partir de nos tissus emblématiques, avec des <a href=\"https://kookai.fr/search?q=crop\" title=\"Collection Crop Kookai\"><span style=\"text-decoration:underline\">crop tops</span></a>, des bodys et des <a href=\"https://kookai.fr/search?q=t-shirt\" title=\"https://kookai.fr/search?q=t-shirt\"><span style=\"text-decoration:underline\">t-shirts</span></a> en coton qui constituent la base de toute garde-robe KOOKAÏ. Chaque semaine, nous lançons de nouveaux modèles dans nos boutiques et en ligne, en proposant les dernières trouvailles en matière de <a href=\"https://kookai.fr/search?q=robe\" title=\"Collection Robe Kookai\"><span style=\"text-decoration:underline\">robes</span></a>, de <a href=\"https://kookai.fr/search?q=jupe\" title=\"https://kookai.fr/search?q=jupe\"><span style=\"text-decoration:underline\">jupes</span></a>, de costumes et autres.</p><p>Nous concevons notre collection dans nos studios de Melbourne et de Paris, et confectionnons chaque pièce avec soin en utilisant des tissus de qualité, en privilégiant la longévité, la polyvalence et l'individualité dans tout ce que nous faisons.</p>",
+            "text_size": 2,
+            "accordion_default": ""
+          }
+        }
+      },
+      "block_order": [
+        "linklist-1",
+        "linklist_MR9t4a",
+        "linklist-2",
+        "text-3"
+      ],
+      "settings": {
+        "menu_position": "left",
+        "footer_image": "shopify://shop_images/KOO857_Kookai_Logo_35c97a0a-a802-4d9b-a6d5-f9d8e4455069.png",
+        "logo_max_limit": 120,
+        "width": "wrapper--full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "subfooter": {
+      "type": "subfooter",
+      "settings": {
+        "footer_secondary_linklist": "",
+        "footer_payment_enable": true,
+        "footer_social_enable": true,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "subfooter"
+  ]
+}

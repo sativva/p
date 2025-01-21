@@ -1,0 +1,70 @@
+<!-- /snippets/onboarding-product.liquid -->
+
+{% assign wrapper_class = 'wrapper' %}
+{% if section.settings.width != blank %}
+  {% assign wrapper_class = section.settings.width %}
+{% endif %}
+
+{%- assign product_image_width = 'large-up--five-eighths medium--one-half' -%}
+{%- assign product_description_width = 'large-up--three-eighths medium--one-half' -%}
+
+{% if wrapper_class == 'wrapper--tiny' or wrapper_class == 'wrapper--narrow' %}
+  {%- assign product_image_width = 'one-whole' -%}
+  {%- assign product_description_width = 'one-whole' -%}
+{% endif %}
+
+<div class="{{ wrapper_class }} product__align-left">
+  <div class="float-grid product-single">
+    <div class="grid__item product__media__wrapper {{ product_image_width }} product__mobile--{{ section.settings.mobile_layout }}">
+      <div class="product__grid product__grid--slides">
+        <div class="product__media">
+          {{ 'product-5' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      </div>
+    </div>
+    <div class="grid__item {{ product_description_width }}">
+      <div class="product__inner is-sticky">
+
+        <div class="product__block__title">
+          <div class="product__headline">
+            <div class="product__title__wrapper">
+              <h1 class="product__title heading-size-9">
+                {{ 'home_page.onboarding.product_title' | t }}
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__block__price">
+          <div class="product__price__wrap">
+            <div class="product__price__main">
+              <span class="product__price accent-size-5">
+                {{ 1999 | money }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__block__buttons">
+          <div class="product__form__inner">
+            <div class="product__submit">
+              <div class="product__submit__buttons">
+                <button disabled class="btn--outline btn--large btn--full btn--add-to-cart" data-add-to-cart>
+                  <span>{{ 'products.product.add_to_cart' | t }}</span>
+                  <span>•</span>
+                  <span>
+                    {{ 1999 | money }}
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
