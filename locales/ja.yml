@@ -1,0 +1,3 @@
+order_confirmation:
+  iftext: "Thank you for your order. From our New York City atelier to your closet &#8211; your order will arrive shortly. We will send you another email once your package ships."
+  utm_campaign: "order-confirmation-email"
