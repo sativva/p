@@ -49,8 +49,13 @@ Dir.glob("#{SOURCE_DIR}/**/*.liquid") do |template_path|
   lang = filename # ex: "en"
   output_filename = "#{email_type}_#{lang}.html"
   output_path = File.join(OUTPUT_DIR, output_filename)
+  layout_filename = if email_type.include?("loop")
+    "layout_loops_#{lang}.liquid"
+  else
+    "layout_#{lang}.liquid"
+  end
 
-  layout_path = File.join(BLOCKS_DIR, "layout_#{lang}.liquid")
+  layout_path = File.join(BLOCKS_DIR, layout_filename)
   translations = load_translations(lang)
 
   html = compile_template(template_path, layout_path, translations)
