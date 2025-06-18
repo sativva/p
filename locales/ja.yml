@@ -1,3 +1,3 @@
 order_confirmation:
-  iftext: "Thank you for your order. From our New York City atelier to your closet &#8211; your order will arrive shortly. We will send you another email once your package ships."
+  iftext: " このたびはご注文いただき、誠にありがとうございます。ニューヨークのアトリエからあなたのクローゼットへ&#8211; &#8211; まもなく商品をお届けいたします。発送が完了しましたら、あらためてメールにてご案内いたします。"
   utm_campaign: "order-confirmation-email"
