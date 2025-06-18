@@ -1,0 +1,20 @@
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}

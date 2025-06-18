@@ -379,11 +379,14 @@
   </head>
   <body class="body " id="body" left Margin="0" topMargin="0" Marginwidth="0" Marginheight="0" bgcolor="#fefcf6" style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; Margin: 0; padding: 0;">
         <!--[if !mso 9]><!-->
-    <div style="display: none; overflow: hidden; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; mso-hide: all;"> このたびはご注文いただき、誠にありがとうございます。ニューヨークのアトリエからあなたのクローゼットへ&#8211; &#8211; まもなく商品をお届けいたします。発送が完了しましたら、あらためてメールにてご案内いたします。
+
+    <div style="display: none; overflow: hidden; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; mso-hide: all;">{{ missing t.order_cancelled.iftext }}
+
+
     </div>
     <div id="custom-preview-text" style="display: none; overflow: hidden; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; mso-hide: all;">&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;&#847;&#8204;&nbsp;</div>
     <!--<![endif]-->
-    {% capture default_utms %}utm_campaign=order-confirmation-email&utm_medium=email&utm_source=OrderlyEmails{% endcapture %}
+    {% capture default_utms %}utm_campaign=order_cancelled&utm_medium=email&utm_source=OrderlyEmails{% endcapture %}
     {% capture question_mark %}?{% endcapture %}
     <!-- SENSE -->
 

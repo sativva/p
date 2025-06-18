@@ -1,3 +1,4 @@
 order_confirmation:
   iftext: " このたびはご注文いただき、誠にありがとうございます。ニューヨークのアトリエからあなたのクローゼットへ&#8211; &#8211; まもなく商品をお届けいたします。発送が完了しましたら、あらためてメールにてご案内いたします。"
-  utm_campaign: "order-confirmation-email"
+draft_order_invoice:
+  iftext: " 下記の商品をお客様のためにお取り置きいたしました。"
