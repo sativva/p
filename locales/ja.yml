@@ -2,3 +2,11 @@ order_confirmation:
   iftext: " このたびはご注文いただき、誠にありがとうございます。ニューヨークのアトリエからあなたのクローゼットへ&#8211; &#8211; まもなく商品をお届けいたします。発送が完了しましたら、あらためてメールにてご案内いたします。"
 draft_order_invoice:
   iftext: " 下記の商品をお客様のためにお取り置きいたしました。"
+order_edited:
+  iftext: " ご注文内容が一部更新されました。最新のご注文内容は以下のとおりですので、ご確認ください。."
+order_cancelled:
+  iftext: "ご注文商品のキャンセルが完了いたしましたことをお知らせいたします"
+order_refund:
+  iftext: "This is a confirmation that we have processed your refund."
+order_shipping_refund:
+  iftext: "このたびはご注文いただき、誠にありがとうございます。ご注文の商品を発送いたしましたのでお知らせいたします。"

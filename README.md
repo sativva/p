@@ -14,9 +14,7 @@ Un système pour éditer, structurer et compiler proprement vos e-mails Shopify 
 ✅ Blocs personnalisés incluant des variables (with)
 
 📁 Structure du projet
-bash
-Copy
-Edit
+
 .
 ├── blocks/                  # Blocs HTML réutilisables (header, footer, date_jp...)
 │   ├── header_en.liquid
@@ -94,9 +92,7 @@ order_confirmation:
   utm_campaign: "order_confirmation"
 ⚙️ Compilation
 Lancer la compilation :
-bash
-Copy
-Edit
+
 ruby build.rb
 Cela va :
 

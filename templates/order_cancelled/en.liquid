@@ -136,7 +136,7 @@
                                               </th>
                                             </tr>
                                             {% for line_item in line_items %}
-                                              {% if line_item.quantity != 0 or line_item.product.vendor != ‘Route’ %}
+                                              {% if line_item.quantity != 0 or line_item.product.vendor != 'Route' %}
                                                 <!-- Bold 2 -->
                                               {% capture line_variant_id1 %}{{ line_item.variant_id }}{% endcapture %}
                                               {% assign adjusted_item_price = line_item.price | default: 0 %}

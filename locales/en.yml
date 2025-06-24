@@ -2,3 +2,11 @@ order_confirmation:
   iftext: "Thank you for your order. From our New York City atelier to your closet &#8211; your order will arrive shortly. We will send you another email once your package ships."
 draft_order_invoice:
   iftext: "We have reserved the following items for you from Adam Lippes."
+order_edited:
+  iftext: "The items on your order have been updated. Please find below your updated order details."
+order_cancelled:
+  iftext: "This is a confirmation email notifying you that your order or part of your order has now been cancelled."
+order_refund:
+  iftext: "This is a confirmation that we have processed your refund."
+order_shipping_refund:
+  iftext: "We're happy to let you know that your order has been shipped!"
