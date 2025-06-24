@@ -12,3 +12,5 @@ order_shipping_refund:
   iftext: "このたびはご注文いただき、誠にありがとうございます。ご注文の商品を発送いたしましたのでお知らせいたします。"
 payment_error:
   iftext: "You added items to your shopping cart but the payment couldn&#8217;t be processed. You haven&#8217;t been charged."
+shipping_update:
+  iftext: "The following shipped items from your order have been updated with new shipping information."
