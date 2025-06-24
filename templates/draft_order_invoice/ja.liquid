@@ -473,7 +473,7 @@
                                                         <th style="mso-line-height-rule: exactly; padding-right: 15px;" align="left" bgcolor="#fefcf6" valign="top">
                                                           <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">
 
-<->                                                          {% include 'date_jp.liquid' with  attributes.Delivery-Date %}
+                                                         {% include 'date_jp.liquid' with  attributes.Delivery-Date %}
 
                                                         </th>
                                                       </tr>
@@ -517,25 +517,8 @@
                                                       <tr>
                                                         <th style="mso-line-height-rule: exactly; padding-right: 15px;" align="left" bgcolor="#fefcf6" valign="top">
                                                           <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">
-                                                            {% assign month = attributes.Pickup-Date   | date: "%B" %}
-                                                            {% assign month = attributes.Pickup-Date   | date: "%B" %}
-                                                            {% assign month_jp = "" %}
-                                                            {% case month %}
-                                                              {% when "January" %} {% assign month_jp = "1月" %}
-                                                              {% when "February" %} {% assign month_jp = "2月" %}
-                                                              {% when "March" %} {% assign month_jp = "3月" %}
-                                                              {% when "April" %} {% assign month_jp = "4月" %}
-                                                              {% when "May" %} {% assign month_jp = "5月" %}
-                                                              {% when "June" %} {% assign month_jp = "6月" %}
-                                                              {% when "July" %} {% assign month_jp = "7月" %}
-                                                              {% when "August" %} {% assign month_jp = "8月" %}
-                                                              {% when "September" %} {% assign month_jp = "9月" %}
-                                                              {% when "October" %} {% assign month_jp = "10月" %}
-                                                              {% when "November" %} {% assign month_jp = "11月" %}
-                                                              {% when "December" %} {% assign month_jp = "12月" %}
-                                                            {% endcase %}
+                                                            {% include 'date_jp.liquid' with  attributes.Pickup-Date %}
 
-                                                            {{ attributes.Pickup-Date   | date: "%Y年" }}{{ month_jp }}{{ attributes.Pickup-Date   | date: "%d日" }}
 
                                                       </p>
                                                         </th>
@@ -754,8 +737,8 @@
                                                       <tr>
                                                         <th style="mso-line-height-rule: exactly; padding-left: 15px;" align="left" bgcolor="#fefcf6" valign="top">
                                                           <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">
-                                                          {% assign date = attributes.Pickup-Date  %}
-                                                          {% include 'date_jp.liquid' %}</p>
+
+                                                           {% include 'date_jp.liquid' with  attributes.Pickup-Date %}</p>
                                                         </th>
                                                       </tr>
                                                     {% endif %}

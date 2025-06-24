@@ -10,3 +10,5 @@ order_refund:
   iftext: "This is a confirmation that we have processed your refund."
 order_shipping_refund:
   iftext: "We're happy to let you know that your order has been shipped!"
+payment_error:
+  iftext: "You added items to your shopping cart but the payment couldn&#8217;t be processed. You haven&#8217;t been charged."

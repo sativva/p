@@ -549,27 +549,31 @@
                                                   <h2 style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; color: #2e2a39; font-size: 20px; line-height: 34px; font-weight: 500; text-transform: none; letter-spacing: 1.5px; Margin: 0;" align="left">
                                                     <span data-key="26492699_order_number">ご注文番号：</span> {{ name }}
                                                   </h2>
-                                                  <p class="muted" style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 13px; line-height: 30px; font-weight: normal; text-transform: none; color: #828a91; Margin: 0;" align="left">{% assign month = created_at | date: "%B" %}
-{% assign month = created_at | date: "%B" %}
+                                                  <p class="muted" style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 13px; line-height: 30px; font-weight: normal; text-transform: none; color: #828a91; Margin: 0;" align="left">
+                                                    {% assign include = created_at %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
 {% assign month_jp = "" %}
+
 {% case month %}
-  {% when "January" %} {% assign month_jp = "1月" %}
-  {% when "February" %} {% assign month_jp = "2月" %}
-  {% when "March" %} {% assign month_jp = "3月" %}
-  {% when "April" %} {% assign month_jp = "4月" %}
-  {% when "May" %} {% assign month_jp = "5月" %}
-  {% when "June" %} {% assign month_jp = "6月" %}
-  {% when "July" %} {% assign month_jp = "7月" %}
-  {% when "August" %} {% assign month_jp = "8月" %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
   {% when "September" %} {% assign month_jp = "9月" %}
-  {% when "October" %} {% assign month_jp = "10月" %}
-  {% when "November" %} {% assign month_jp = "11月" %}
-  {% when "December" %} {% assign month_jp = "12月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
 {% endcase %}
 
-{{ created_at | date: "%Y年" }}{{ month_jp }}{{ created_at | date: "%d日" }}
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
 
-</p>
+
+                                                  </p>
                                                 {% endif %}
                                               </th>
                                             </tr>
@@ -624,7 +628,28 @@
                                                               </tr>
                                                               <tr>
                                                                 <th style="mso-line-height-rule: exactly; padding-right: 15px;" align="left" bgcolor="#fefcf6" valign="top">
-                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{{ attributes.Delivery-Date | date: "%B %d, %Y" }}</p>
+                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left"> {% assign include = attributes.Delivery-Date %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
+</p>
                                                                 </th>
                                                               </tr>
                                                             {% endif %}
@@ -666,7 +691,29 @@
                                                               </tr>
                                                               <tr>
                                                                 <th style="mso-line-height-rule: exactly; padding-right: 15px;" align="left" bgcolor="#fefcf6" valign="top">
-                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{{ attributes.Pickup-Date | date: "%B %d, %Y" }}</p>
+                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">
+                                                                   {% assign include = attributes.Pickup-Date %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
+</p>
                                                                 </th>
                                                               </tr>
                                                             {% endif %}
@@ -716,7 +763,28 @@
                                                               </tr>
                                                               <tr>
                                                                 <th style="mso-line-height-rule: exactly; padding-right: 15px;" align="left" bgcolor="#fefcf6" valign="top">
-                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{{ attributes.Shipping-Date | date: "%B %d, %Y" }}</p>
+                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left"> {% assign include = attributes.Shipping-Date %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
+</p>
                                                                 </th>
                                                               </tr>
                                                             {% endif %}
@@ -835,7 +903,28 @@
                                                               </tr>
                                                               <tr>
                                                                 <th style="mso-line-height-rule: exactly; padding-left: 15px;" align="left" bgcolor="#fefcf6" valign="top">
-                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{{ attributes.Delivery-Date | date: "%B %d, %Y" }}</p>
+                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{% assign include = attributes.Delivery-Date %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
+</p>
                                                                 </th>
                                                               </tr>
                                                             {% endif %}
@@ -877,7 +966,28 @@
                                                               </tr>
                                                               <tr>
                                                                 <th style="mso-line-height-rule: exactly; padding-left: 15px;" align="left" bgcolor="#fefcf6" valign="top">
-                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{{ attributes.Pickup-Date | date: "%B %d, %Y" }}</p>
+                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{% assign include = attributes.Pickup-Date %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
+</p>
                                                                 </th>
                                                               </tr>
                                                             {% endif %}
@@ -927,7 +1037,28 @@
                                                               </tr>
                                                               <tr>
                                                                 <th style="mso-line-height-rule: exactly; padding-left: 15px;" align="left" bgcolor="#fefcf6" valign="top">
-                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{{ attributes.Shipping-Date | date: "%B %d, %Y" }}</p>
+                                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">{% assign include = attributes.Shipping-Date %}
+{% assign input_date = include %}
+{% assign month = input_date | date: "%B" %}
+{% assign month_jp = "" %}
+
+{% case month %}
+  {% when "January" %}   {% assign month_jp = "1月" %}
+  {% when "February" %}  {% assign month_jp = "2月" %}
+  {% when "March" %}     {% assign month_jp = "3月" %}
+  {% when "April" %}     {% assign month_jp = "4月" %}
+  {% when "May" %}       {% assign month_jp = "5月" %}
+  {% when "June" %}      {% assign month_jp = "6月" %}
+  {% when "July" %}      {% assign month_jp = "7月" %}
+  {% when "August" %}    {% assign month_jp = "8月" %}
+  {% when "September" %} {% assign month_jp = "9月" %}
+  {% when "October" %}   {% assign month_jp = "10月" %}
+  {% when "November" %}  {% assign month_jp = "11月" %}
+  {% when "December" %}  {% assign month_jp = "12月" %}
+{% endcase %}
+
+{{ input_date | date: "%Y年" }}{{ month_jp }}{{ input_date | date: "%d日" }}
+</p>
                                                                 </th>
                                                               </tr>
                                                             {% endif %}
