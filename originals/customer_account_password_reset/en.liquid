@@ -1,0 +1,123 @@
+
+            <!-- BEGIN: CONTAINER -->
+            <table class="container container_main" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; min-width: 100%; direction: ltr;" role="presentation" bgcolor="#fefcf6">
+              <tbody>
+                <tr>
+                  <th valign="top" style="mso-line-height-rule: exactly;">
+                    <center style="width: 100%;">
+                      <table border="0" width="620" cellpadding="0" cellspacing="0" align="center" style="width: 620px; min-width: 620px; max-width: 620px; direction: ltr; Margin: auto;" class="email-container" role="presentation">
+                        <tbody>
+                          <tr>
+                            <th valign="top" class="container_border" style="mso-line-height-rule: exactly;">
+                              <!-- BEGIN : SECTION : MAIN -->
+                              <table class="sections_container main" data-id="main" id="section-main" border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" role="presentation" bgcolor="#fefcf6">
+                                <tr>
+                                  <td class="" style="mso-line-height-rule: exactly;" bgcolor="#fefcf6">
+                                    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" id="mixContainer" role="presentation">
+
+                                      <!-- BEGIN SECTION: Heading -->
+                                      <tr id="section-26492911" class="section heading">
+                                        <th class="section_border" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6">
+                                          <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" role="presentation">
+                                            <tr>
+                                              <th class="section_content" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="direction: ltr;">
+                                                  <tr>
+                                                    <th style="mso-line-height-rule: exactly;" bgcolor="#fefcf6" valign="top">
+                                                      <h1 data-key="26492911_heading" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 30px; line-height: 58px; font-weight: 500; color: #2e2a39; text-transform: none; letter-spacing: 1.5px; Margin: 0;" align="center">Password Reset</h1>
+                                                    </th>
+                                                  </tr>
+                                                </table>
+                                              </th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                      <!-- END SECTION: Heading -->
+                                      <!-- BEGIN SECTION: Introduction -->
+                                      <tr id="section-26492912" class="section introduction">
+                                        <th class="section_border" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6">
+                                          <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" role="presentation">
+                                            <tr>
+                                              <th class="section_content" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6" valign="top">
+                                                {% if customer.first_name != blank or billing_address.first_name != blank %}
+                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left">
+                                                    <span data-key="26492912_greeting_text" style="text-align: left; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000;">
+                                                      Dear
+                                                    </span>
+                                                    {{ customer.first_name | default: billing_address.first_name }},
+                                                  </p>
+                                                {% endif %}
+                                                <span data-key="26492912_introduction_text" class="text" style="text-align: left; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000;">
+                                                  <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 15px 0 0;" align="left">You have requested to have your password reset for your account. To continue, click the button below:</p>
+                                                </span>
+                                              </th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                      <!-- END SECTION: Introduction -->
+                                      <!-- BEGIN SECTION: Button -->
+                                      <tr id="section-26492913" class="section button">
+                                        <th class="section_border" style="mso-line-height-rule: exactly; padding: 0 30px 8px;" bgcolor="#fefcf6">
+                                          <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" role="presentation">
+                                            <tr>
+                                              <th class="section_content" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="direction: ltr;">
+                                                  <!-- Button : BEGIN -->
+                                                  <tr>
+                                                    <th class="sides column_button button5" style="mso-line-height-rule: exactly; Margin: 0; padding: 15px 0;" align="center" bgcolor="#fefcf6" valign="top">
+                                                      <table cellspacing="0" cellpadding="0" border="0" class="button" role="presentation" style="direction: ltr; text-align: center; Margin: 0 auto;" bgcolor="transparent">
+                                                        <tr>
+                                                          <th class="button-inner" style="mso-line-height-rule: exactly; border-radius: 1px;" align="center" bgcolor="#000000" valign="top">
+                                                            <a class="button-link" href="{{customer.reset_password_url}}" target="_blank" style="color: #fefcf6 !important; text-decoration: none !important; text-underline: none; word-wrap: break-word; line-height: 15px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; font-weight: 500; text-transform: none; text-align: center; display: block; background-color: #000000; border-radius: 1px; padding: 1px 20px; border: 15px solid #000000;"><span class="text-on-button" style="line-height: 15px; color: #fefcf6; font-weight: 500; text-decoration: none; text-underline: none; letter-spacing: 0.5px;"><!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--><span class="text-on-button-inner" data-key="26492913_text_on_button" style="line-height: 15px; color: #fefcf6; font-weight: 500; text-decoration: none; text-underline: none; letter-spacing: 0.5px;">Reset Password</span><!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--></span></a>
+                                                          </th>
+                                                        </tr>
+                                                      </table>
+                                                    </th>
+                                                  </tr>
+                                                  <!-- Button : END -->
+                                                  <tr>
+                                                    <th class="sides column_text_after_button muted" data-key="26492913_text_after_button" style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 13px; line-height: 30px; font-weight: normal; text-transform: none; color: #828a91;" align="center" bgcolor="#fefcf6" valign="top">If you received this email in error, you can safely ignore this email.
+                                                    </th>
+                                                  </tr>
+                                                </table>
+                                              </th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                      <!-- END SECTION: Button -->
+                                      <!-- BEGIN SECTION: Closing Text -->
+                                      <tr id="section-26492914" class="section closing_text">
+                                        <th class="section_border" style="mso-line-height-rule: exactly; padding: 8px 30px 30px;" bgcolor="#fefcf6">
+                                          <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" role="presentation">
+                                            <tr>
+                                              <th data-key="26492914_closing_text" class="section_content text" style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; padding: 8px 30px;" align="left" bgcolor="#fefcf6" valign="top">
+                                                Please don't hesitate to contact us at&nbsp;<a href="mailto:customerservice@adamlippes.com" style="color: #000000 !important; text-decoration: none !important; text-underline: none; word-wrap: break-word; border-bottom-width: 1px; border-bottom-color: #5f5f5f; border-bottom-style: solid;">customerservice@adamlippes.com</a>&nbsp;with any questions or concerns.
+                                                <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; Margin: 0;" align="left"><br>
+                                                </p>
+                                                <br>
+                                                Warm regards,<br>
+                                                The Adam Lippes team
+                                              </th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                      <!-- END SECTION: Closing Text -->
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- END : SECTION : MAIN -->
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </center>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+            <!-- END : CONTAINER -->

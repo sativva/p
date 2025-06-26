@@ -11,6 +11,7 @@ def load_translations(lang)
   YAML.load_file(file)
 end
 
+# echo -n "Nom du fichier : " name && mkdir -p templates/$name originals/$name && touch templates/$name/en.liquid templates/$name/ja.liquid originals/$name/en.liquid originals/$name/ja.liquid
 
 def interpolate_translations(content, translations)
   # support both {{ t.key.subkey }} and {{ t[key.subkey] }}

@@ -7,10 +7,22 @@ order_edited:
 order_cancelled:
   iftext: "ご注文商品のキャンセルが完了いたしましたことをお知らせいたします"
 order_refund:
-  iftext: "This is a confirmation that we have processed your refund."
+  iftext: "ご返金手続きが完了いたしましたので、お知らせいたします。"
 order_shipping_refund:
   iftext: "このたびはご注文いただき、誠にありがとうございます。ご注文の商品を発送いたしましたのでお知らせいたします。"
 payment_error:
-  iftext: "You added items to your shopping cart but the payment couldn&#8217;t be processed. You haven&#8217;t been charged."
+  iftext: "ショッピングカートに商品を追加されましたが、お支払いの処理が完了しませんでした。"
 shipping_update:
-  iftext: "The following shipped items from your order have been updated with new shipping information."
+  iftext: "ご注文の商品につきまして、以下の発送済みアイテムの配送情報が更新されましたのでお知らせいたします。"
+out_for_delivery:
+  iftext: "ご注文の商品はただいま配達中です。"
+return_created:
+  iftext: "このたびは返品についてご連絡いただき、ありがとうございます。 以下の手順に沿って、返品手続きを完了してください。"
+customer_account_welcome:
+  iftext: "ようこそ、アカウントの登録が完了し、ご利用いただけるようになりました！"
+customer_account_password_reset:
+  iftext: "アカウントのパスワード再設定のリクエストを承りました。下記のボタンをクリックして、再設定手続きを進めてください。"
+delivered:
+  iftext: "ご注文いただいた下記の商品が配達完了となりましたので、お知らせいたします。"
+order_shipping_confirmation:
+  iftext: "このたびはご注文いただき、誠にありがとうございます。ご注文の商品を発送いたしましたのでお知らせいたします。"

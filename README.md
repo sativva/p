@@ -1,6 +1,12 @@
 ✉️ Shopify Email Compiler
 Un système pour éditer, structurer et compiler proprement vos e-mails Shopify dans un repository Git, avec :
 
+
+ruby build.rb
+
+
+
+
 ✅ Includes (header, footer, blocs)
 
 ✅ Traductions via fichiers YAML

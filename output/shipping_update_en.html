@@ -668,16 +668,16 @@
                                                                         <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; background-color: #fefcf6 !important; Margin: 0; border: #fefcf6;" align="left">
                                                                           <a href="{% capture link %}https://{{shop.domain}}{{line_item.line_item.product.url}}{% endcapture %}{% if link contains shop.domain %}{% assign split_link = link | split: question_mark %}{{ split_link[0] }}?{{ default_utms }}&utm_content=product{% if split_link[1] != blank %}&{{ split_link[1] }}{% endif %}{% else %}{{ link }}{% endif %}" target="_blank" style="color: #000000 !important; text-decoration: none !important; text-underline: none; word-wrap: break-word; border-bottom-width: 1px; border-bottom-color: #5f5f5f; font-weight: 300; text-align: left !important; border: none;">
                                                                             {% if line_title == "Tip" %}Tip{% else %}{{ line_title }}{% endif %}
-                                                                            </a>
-                                                                            {% if line_item.line_item.variant.title != blank and line_item.line_item.variant.title != "Default Title" and line_item.line_item.variant.title != "Default" %}
+                                                                          </a>
+                                                                          {% if line_item.line_item.variant.title != blank and line_item.line_item.variant.title != "Default Title" and line_item.line_item.variant.title != "Default" %}
                                                                               <br style="background-color: #fefcf6 !important; border: #fefcf6;">
                                                                               <span class="muted" style="text-align: left; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 13px; line-height: 30px; font-weight: normal; text-transform: none; color: #828a91; background-color: #fefcf6 !important; border: #fefcf6;">{{ line_item.line_item.variant.title }}</span>
-                                                                            {% endif %}
-                                                                            {% if line_item.line_item.selling_plan_allocation != blank %}
+                                                                          {% endif %}
+                                                                          {% if line_item.line_item.selling_plan_allocation != blank %}
                                                                               <br style="background-color: #fefcf6 !important; border: #fefcf6;">
                                                                               <span class="muted" style="text-align: left; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 13px; line-height: 30px; font-weight: normal; text-transform: none; color: #828a91; background-color: #fefcf6 !important; border: #fefcf6;">{{ line_item.line_item.selling_plan_allocation.selling_plan.name }}</span>
-                                                                            {% endif %}
-                                                                            {% for p in line_item.line_item.properties %}
+                                                                          {% endif %}
+                                                                          {% for p in line_item.line_item.properties %}
                                                                               {% assign p_internal = p.first | slice: 0 %}
                                                                               {% unless p.first contains "builder_id" or p.first contains "builder_info" or p.first contains "master_builder" or p.last == "" or p.last == blank %}
                                                                                 {% if p.first contains "preview" or p.last contains "/uploads/" or p.last contains "//uploadery.s3" %}
@@ -690,29 +690,29 @@
                                                                                   <span class="muted" style="text-align: left; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 13px; line-height: 30px; font-weight: normal; text-transform: none; color: #828a91; background-color: #fefcf6 !important; border: #fefcf6;">{{ p.first }}: {{ p.last }}</span>
                                                                                 {% endif %}
                                                                               {% endunless %}
-                                                                            {% endfor %}
-                                                                          </p>
-                                                                        </th>
-                                                                        <th class="right line-item-qty" width="1" style="mso-line-height-rule: exactly; white-space: nowrap; padding: 15px 0 15px 30px; border: #fefcf6;" align="right" bgcolor="#fefcf6" valign="top">
+                                                                          {% endfor %}
+                                                                        </p>
+                                                                      </th>
+                                                                      <th class="right line-item-qty" width="1" style="mso-line-height-rule: exactly; white-space: nowrap; padding: 15px 0 15px 30px; border: #fefcf6;" align="right" bgcolor="#fefcf6" valign="top">
                                                                           <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; background-color: #fefcf6 !important; Margin: 0; border: #fefcf6;" align="right">x&nbsp;{{ line_item.quantity }}</p>
-                                                                        </th>
-                                                                      </tr>
-                                                                    </table>
-                                                                  </th>
-                                                                </tr>
-                                                              {% endif %}
-                                                            {% endfor %}
-                                                          </table>
-                                                        </th>
-                                                      </tr>
-                                                    </table>
-                                                  </th>
-                                                {% endif %}
-                                              </tr>
-                                            </table>
-                                          </th>
-                                        </tr>
-                                        <!-- END SECTION: Products -->
+                                                                      </th>
+                                                                    </tr>
+                                                                  </table>
+                                                                </th>
+                                                              </tr>
+                                                            {% endif %}
+                                                          {% endfor %}
+                                                        </table>
+                                                      </th>
+                                                    </tr>
+                                                  </table>
+                                                </th>
+                                              {% endif %}
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                      <!-- END SECTION: Products -->
                                         <!-- BEGIN SECTION: Shipping Address And Fulfillment Details -->
                                         <tr id="section-26492847" class="section shipping_address_and_fulfillment_details">
                                           <th class="section_border" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6">

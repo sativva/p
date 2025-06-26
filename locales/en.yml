@@ -14,3 +14,15 @@ payment_error:
   iftext: "You added items to your shopping cart but the payment couldn&#8217;t be processed. You haven&#8217;t been charged."
 shipping_update:
   iftext: "The following shipped items from your order have been updated with new shipping information."
+out_for_delivery:
+  iftext: "The below items from your order are now out for delivery."
+return_created:
+  iftext: "Thank you for contacting us about a return. Please follow the instructions below to complete your return."
+customer_account_welcome:
+  iftext: "Welcome, your customer account is now active!"
+customer_account_password_reset:
+  iftext: "You have requested to have your password reset for your account. To continue, click the button below:"
+delivered:
+  iftext: "The below items from your order have now been delivered."
+order_shipping_confirmation:
+  iftext: "We're happy to let you know that your order has been shipped!"
