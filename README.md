@@ -4,6 +4,10 @@ Un système pour éditer, structurer et compiler proprement vos e-mails Shopify 
 
 ruby build.rb
 
+echo -n "Nom du fichier : " && read name && mkdir -p templates/"$name" originals/"$name" && touch templates/"$name"/en.liquid templates/"$name"/ja.liquid originals/"$name"/en.liquid originals/"$name"/ja.liquid
+
+supprimer des fichhiers/dossier
+echo -n "Nom du fichier à supprimer : " && read name && rm -r templates/"$name" originals/"$name"
 
 
 
