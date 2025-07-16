@@ -27,7 +27,7 @@
                                         <tbody>
                                           <tr>
                                             <th style="mso-line-height-rule: exactly;" bgcolor="#fefcf6" valign="top">
-                                              <h1 data-key="26492858_heading" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 30px; line-height: 58px; font-weight: 500; color: #2e2a39; text-transform: none; letter-spacing: 1.5px; margin: 0;" align="center">配送完了のお知らせ</h1>
+                                              <h1 data-key="26492858_heading" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 30px; line-height: 58px; font-weight: 500; color: #2e2a39; text-transform: none; letter-spacing: 1.5px; margin: 0;" align="center">配達完了のお知らせ</h1>
                                             </th>
                                           </tr>
                                         </tbody>
@@ -63,7 +63,7 @@
                                 <tr>
                                   <th data-key="26492860_closing_text" class="section_content text" style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; padding: 8px 30px;" align="left" bgcolor="#fefcf6" valign="top">ご不明な点やご質問がございましたら、どうぞお気軽に&nbsp;<a href="mailto: contact.jp@adamlippes.com" style="color: #000000 !important; text-decoration: none !important; text-underline: none; word-wrap: break-word; border-bottom-width: 1px; border-bottom-color: #5f5f5f; border-bottom-style: solid;"> contact.jp@adamlippes.com</a>&nbsp;までご連絡くださいませ。
                                   <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; margin: 0;" align="left"><br></p>
-                                <br> 今後ともアダム・リペスをご愛顧いただけますと幸いです。　<br> アダム・リペス オンラインショップ</th>
+                                <br> 今後ともアダム リペスをご愛顧いただけますと幸いです。　　<br> アダム リペス オンラインショップ</th>
                               </tr>
                             </tbody>
                           </table>
@@ -150,7 +150,7 @@
                                         <table cellspacing="0" cellpadding="0" border="0" width="100%" style="min-width: 100%; direction: ltr; border: #fefcf6;" role="presentation" bgcolor="#fefcf6">
                                           <tr style="border: #fefcf6;" bgcolor="#fefcf6">
                                             <th colspan="2" class="table_main_title" style="mso-line-height-rule: exactly; border: #fefcf6;" bgcolor="#fefcf6" valign="top">
-                                              <h3 data-key="26492863_item" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; color: #2e2a39; font-size: 18px; line-height: 34px; font-weight: 500; text-transform: none; border-bottom-width: 1px; border-bottom-style: solid; letter-spacing: 1.5px; background-color: #fefcf6 !important; Margin: 0; border: #fefcf6;" align="left">配送完了商品</h3>
+                                              <h3 data-key="26492863_item" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; color: #2e2a39; font-size: 18px; line-height: 34px; font-weight: 500; text-transform: none; border-bottom-width: 1px; border-bottom-style: solid; letter-spacing: 1.5px; background-color: #fefcf6 !important; Margin: 0; border: #fefcf6;" align="left">配達完了商品</h3>
                                             </th>
                                           </tr>
                                           {% for line_item in fulfillment.fulfillment_line_items %}
@@ -465,13 +465,15 @@
         <th class="section_border" style="mso-line-height-rule: exactly; padding: 8px 30px 30px;" bgcolor="#fefcf6">{% if note == blank and attributes == blank %} {% else %} {% endif %}
         <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="min-width: 100%; direction: ltr;" role="presentation">
           <tbody>
-            <tr>
-              <th class="empty" style="mso-line-height-rule: exactly;" bgcolor="#fefcf6" valign="top"></th>
-              <th class="section_content" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6" valign="top">
-                <h3 data-key="26492865_order_notes" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; color: #2e2a39; font-size: 18px; line-height: 34px; font-weight: 500; text-transform: none; border-bottom-style: none; letter-spacing: 1.5px; margin: 0;" align="left">ご注文メモ</h3>
-                <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; margin: 0;" align="left">{% if note != blank %}{{ note | newline_to_br }}{% endif %}<br></p>
-              </th>
-            </tr>
+            {% if note == blank and attributes == blank %}
+               <th class="empty" style="mso-line-height-rule: exactly;" bgcolor="#fefcf6" valign="top">
+               </th>
+             {% else %}
+               <th class="section_content" style="mso-line-height-rule: exactly; padding: 8px 30px;" bgcolor="#fefcf6" valign="top">
+                 <h3 data-key="26492865_order_notes" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; color: #2e2a39; font-size: 18px; line-height: 34px; font-weight: 500; text-transform: none; border-bottom-style: none; letter-spacing: 1.5px; margin: 0;" align="left">ご注文メモ</h3>
+                 <p style="mso-line-height-rule: exactly; direction: ltr; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Poppins'; font-size: 15px; line-height: 30px; font-weight: 300; text-transform: none; color: #000000; margin: 0;" align="left">{% if note != blank %}{{ note | newline_to_br }}{% endif %}<br></p>
+               </th>
+             {% endif %}
           </tbody>
         </table>
       </th>
